@@ -41,6 +41,10 @@ section p{
 .item{
 	float: left;
 	border-left: 0.1rem solid #27AE60;
+	min-width: 4rem;
+}
+.item-title{
+	font-size: 1.6rem;
 }
 .sub-item{
 	text-indent: 1.5rem;
