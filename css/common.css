@@ -44,6 +44,8 @@ section p{
 	min-width: 4rem;
 	text-align: center;
 	padding: 0 0.8rem;
+	height: 2.4rem;
+    line-height: 2.4rem;
 }
 .item-title{
 	font-size: 1.6rem;
