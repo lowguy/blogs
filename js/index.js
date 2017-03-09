@@ -10,6 +10,7 @@ var app = new Vue({
     getSubItem:function(index){
       var _this = this
       this.$http.get('data/sub_item.json',{id:index}).then((res) => {
+        console.log(res)
           _this.items[index]["subitem"] = res.body.result
       },(res) => {
           console.log(res)
