@@ -1,13 +1,7 @@
 {
 	"result":[
-		{"title":"php 的数据强制类型转换和默认类型转换","id":1},
-		{"title":"php 的关键字之static","id":2},
-		{"title":"php 函数之func_num_args和func_get_arg","id":3},
-		{"title":"php 的&","id":4},
-		{"title":"双引号和单引号的区别","id":5},
-		{"title":"php cookie与session","id":6},
-		{"title":"php 长链接合短链接的使用","id":7},
-		{"title":"php socket","id":8},
-		{"title":"http状态码","id":9}
+		{"title":"mysql 常用语句","id":1},
+		{"title":"mysql 索引","id":2},
+		{"title":"mysql 锁","id":3}
 	]
 }

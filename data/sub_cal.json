@@ -1,13 +1,10 @@
 {
 	"result":[
-		{"title":"php 的数据强制类型转换和默认类型转换","id":1},
-		{"title":"php 的关键字之static","id":2},
-		{"title":"php 函数之func_num_args和func_get_arg","id":3},
-		{"title":"php 的&","id":4},
-		{"title":"双引号和单引号的区别","id":5},
-		{"title":"php cookie与session","id":6},
-		{"title":"php 长链接合短链接的使用","id":7},
-		{"title":"php socket","id":8},
-		{"title":"http状态码","id":9}
+		{"title":"冒泡排序","id":1},
+		{"title":"快速排序","id":2},
+		{"title":"二分法","id":3},
+		{"title":"关于秒杀的一些思路","id":4},
+		{"title":"二进制 十进制","id":5},
+		{"title":"指数法则","id":6}
 	]
 }
