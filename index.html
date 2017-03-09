@@ -6,7 +6,10 @@
 <body>
 <div id="app">
 	<header>
-		{{ message }}
+		<div class="container">
+			<h1>{{ author }}</h1>
+			{{ message }}
+		</div>
 	</header>
     <footer>
     	{{copyright}}
@@ -17,6 +20,7 @@
 var app = new Vue({
   el: '#app',
   data: {
+  	author: '890',
     message: '欢迎来到我的博客',
     copyright:"blogs.890vip.cn"
   }
