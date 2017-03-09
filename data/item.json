@@ -5,7 +5,7 @@
 			{"title":"PHP","id":1,"subindex":"php","subitem":[]},
 			{"title":"MYSQL","id":2,"subindex":"mysql","subitem":[]},
 			{"title":"LINUX","id":3,"subindex":"linux","subitem":[]},
-			{"title":"经典算法","id":,"subindex":"cal"4,"subitem":[]},
+			{"title":"经典算法","id":4,"subindex":"cal","subitem":[]},
 			{"title":"PHP设计模式","id":5,"subindex":"module","subitem":[]}
 		]
 	}
