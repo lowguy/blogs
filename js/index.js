@@ -17,8 +17,8 @@ var app = new Vue({
   },
   mounted:function(){
     this.$http.get('data/item.json').then((res) => {
-        console.log(res.bodyText.promise)
-        this.items = res.body.result
+        console.log(res.bodyText.promise.PromiseValue.result)
+        //this.items = res.body.result
     })
   }
 })
