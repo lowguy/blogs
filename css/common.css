@@ -32,3 +32,13 @@ section{
     padding-right: 1.5rem;
     padding-left: 1.5rem;
 }
+.container p{
+	cursor: pointer;
+}
+.sub_item{
+	text-indent: 1.5rem;
+	background-color: #e8e8e8;
+}
+.sub-item-title{
+	font-size: 1.5rem;
+}
