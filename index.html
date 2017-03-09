@@ -24,39 +24,7 @@
     </footer>
 </div>
 <script src="//cdn.bootcss.com/vue/2.2.1/vue.js"></script>
-<script src="//cdn.bootcss.com/vue-resource/1.2.1/vue-resource.js"></script>1
-<script type="text/javascript">
-var app = new Vue({
-  el: '#app',
-  data: {
-  	author: '890',
-    message: '欢迎来到我的博客',
-    copyright:"blogs.890vip.cn",
-    items:[]
-  },
-  methods:{
-  	getSubItem:function(index){
-  		this.items[index]['subitem'] = [
-  			{title:'sdsd'},
-  			{title:'sdsd'},
-  			{title:'sdsd'}
-  		]
-  	}
-  },
-  mounted:function(){
-  	this.$http.get('data/item.json').then((res) => {
-  		console.log(res)
-	    this.items = res.body.result
-	})
-  	this.items = [
-    	{title:'PHP',id:1,subitem:[]},
-    	{title:'MYSQL',id:2,subitem:[]},
-    	{title:'LINUX',id:3,subitem:[]},
-    	{title:'经典算法',id:4,subitem:[]},
-    	{title:'PHP设计模式',id:5,subitem:[]}
-    ]
-  }
-})
-</script>
+<script src="//cdn.bootcss.com/vue-resource/1.2.1/vue-resource.js"></script>
+<script src="js/index.js"></script>
 </body>
 </html>
