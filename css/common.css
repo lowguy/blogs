@@ -14,14 +14,14 @@ p{
 header{
 	text-align: center;
     position: relative;
-    text-align: center;
     background-color: #27AE60;
     color: #fff;
     margin-bottom: 0;
-    padding: 0 4rem;
+    padding:4rem 0;
 }
 footer{
 	height:10rem;
+	font-size: 2rem;
 	text-align: center;
 }
 .container {
