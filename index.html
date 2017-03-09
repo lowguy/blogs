@@ -13,8 +13,10 @@
 	</header>
 	<div class="clear"></div>
 	<section>
-		<div v-for="(item,index) in items" class="item">
-			<span v-text="item.title" class="item-title" v-on:click=getSubItem(index,item.subindex)></span>
+		<div class="nav">
+			<div v-for="(item,index) in items" class="item">
+				<span v-text="item.title" class="item-title" v-on:click=getSubItem(index,item.subindex)></span>
+			</div>
 		</div>
 		<div class="clear"></div>
 		<div class="sub-item">
