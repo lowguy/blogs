@@ -4,12 +4,14 @@ var app = new Vue({
     author: '890',
     message: '欢迎来到我的博客',
     copyright:"blogs.890vip.cn",
+    selected:0,
     items:[],
     subitem:[]
   },
   methods:{
     getSubItem:function(index,subindex){
       var _this = this
+      _this.selected = index
       this.$http.get('data/sub_'+ subindex +'.json').then((res) => {
           _this.subitem = res.body.result
       },(res) => {
