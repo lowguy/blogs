@@ -13,9 +13,9 @@
 	</header>
 	<section>
 		<div v-for="(item,index) in items" class="item">
-			<p v-text="item.title" calss="item-title" v-on:click=getSubItem(index,item.subindex)></p>
+			<p v-text="item.title" class="item-title" v-on:click=getSubItem(index,item.subindex)></p>
 			<div class="sub-item">
-				<p v-for="sub in item.subitem" calss="sub-item-title" v-text="sub.title"></p>
+				<p v-for="sub in item.subitem" class="sub-item-title" v-text="sub.title"></p>
 			</div>
 		</div>
 	</section>
