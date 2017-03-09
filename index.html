@@ -44,12 +44,10 @@ var app = new Vue({
   	}
   },
   mounted:function(){
-  	this.$http.get('data/item.json').then((response) => {
-	    alert(1);
-	    console.log(response);
-	}, (response) => {
-	    // error callback
-	});
+  	this.$http.get('data/item.json').then((res) => {
+  		console.log(res)
+	    this.items = res.body.result
+	})
   	this.items = [
     	{title:'PHP',id:1,subitem:[]},
     	{title:'MYSQL',id:2,subitem:[]},
