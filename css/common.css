@@ -42,6 +42,8 @@ section p{
 	float: left;
 	border-left: 0.1rem solid #27AE60;
 	min-width: 4rem;
+	text-align: center;
+	padding: 0 0.8rem;
 }
 .item-title{
 	font-size: 1.6rem;
