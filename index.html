@@ -15,7 +15,7 @@
 		<div v-for="item in items" class="item">
 			<p v-text="item.title" calss="item-title"></p>
 			<div class="sub-item">
-				<p v-for="sub int item.subitem" calss="sub-item-title" v-text="sub.title"></p>
+				<p v-for="sub in item.subitem" calss="sub-item-title" v-text="sub.title"></p>
 			</div>
 		</div>
 	</section>
