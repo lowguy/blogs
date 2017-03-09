@@ -11,9 +11,12 @@
 			<p>{{ message }}</p>
 		</div>
 	</header>
-	<secrion>
-		<div v-for="item in items">
-			<p v-text="item.title"></p>
+	<section>
+		<div v-for="item in items" class="item">
+			<p v-text="item.title" calss="item-title"></p>
+			<div class="sub-item">
+				<p v-for="sub int item.subitem" calss="sub-item-title" v-text="sub.title"></p>
+			</div>
 		</div>
 	</section>
     <footer>
@@ -29,11 +32,11 @@ var app = new Vue({
     message: '欢迎来到我的博客',
     copyright:"blogs.890vip.cn",
     items:[
-    	{title:'PHP',id:1},
-    	{title:'MYSQL',id:2},
-    	{title:'LINUX',id:3},
-    	{title:'经典算法',id:4},
-    	{title:'PHP设计模式',id:5}
+    	{title:'PHP',id:1,subitem:[]},
+    	{title:'MYSQL',id:2,subitem:[]},
+    	{title:'LINUX',id:3,subitem:[],
+    	{title:'经典算法',id:4,subitem:[]},
+    	{title:'PHP设计模式',id:5,subitem:[]}
     ]
   }
 })
