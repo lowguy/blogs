@@ -14,7 +14,7 @@
 	<div class="clear"></div>
 	<section>
 		<div class="nav">
-			<div v-for="(item,index) in items" class="item" :class="selected == index ? active : ''">
+			<div v-for="(item,index) in items" class="item" :class="selected == index ? 'active' : ''">
 				<span v-text="item.title" class="item-title" v-on:click=getSubItem(index,item.subindex)></span>
 			</div>
 		</div>
