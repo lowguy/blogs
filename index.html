@@ -14,9 +14,9 @@
 	<section>
 		<div v-for="(item,index) in items" class="item">
 			<p v-text="item.title" class="item-title" v-on:click=getSubItem(index,item.subindex)></p>
-			<div class="sub-item">
-				<p v-for="sub in item.subitem" class="sub-item-title" v-text="sub.title"></p>
-			</div>
+		</div>
+		<div class="sub-item">
+			<p v-for="sub in subitem" class="sub-item-title" v-text="sub.title"></p>
 		</div>
 	</section>
     <footer>
