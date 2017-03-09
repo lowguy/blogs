@@ -11,7 +11,7 @@ var app = new Vue({
       var _this = this
       this.$http.get('data/sub_item.json').then((res) => {
         console.log(res)
-          _this.items = res.body.result.list
+          _this.items[index]["subitem"] = res.body.result.list
       },(res) => {
           console.log(res)
       })
