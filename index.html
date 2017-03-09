@@ -21,7 +21,7 @@
 		<div class="clear"></div>
 		<div class="sub-item">
 			<span v-for="sub in subitem" class="sub-item-title">
-				<router-link :to="{ name: 'detail', params: { id: item.id }}" v-text="sub.title"></router-link>
+				<router-link :to="{ name: 'detail', params: { id: sub.id }}" v-text="sub.title"></router-link>
 			</span>
 		</div>
 	</section>
