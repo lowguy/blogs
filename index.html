@@ -11,6 +11,11 @@
 			<p>{{ message }}</p>
 		</div>
 	</header>
+	<secrion>
+		<div v-for="item in items">
+			<p v-text="item.title"></p>
+		</div>
+	</section>
     <footer>
     	{{copyright}}
     </footer>
@@ -22,7 +27,14 @@ var app = new Vue({
   data: {
   	author: '890',
     message: '欢迎来到我的博客',
-    copyright:"blogs.890vip.cn"
+    copyright:"blogs.890vip.cn",
+    items:[
+    	{title:'PHP',id:1},
+    	{title:'MYSQL',id:2},
+    	{title:'LINUX',id:3},
+    	{title:'经典算法',id:4},
+    	{title:'PHP设计模式',id:5}
+    ]
   }
 })
 </script>
