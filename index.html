@@ -5,14 +5,20 @@
 </head>
 <body>
 <div id="app">
-  {{ message }}
+	<header>
+		{{ message }}
+	</header>
+    <footer>
+    	{{copyright}}
+    </footer>
 </div>
 <script src="//cdn.bootcss.com/vue/2.2.1/vue.js"></script>
 <script type="text/javascript">
 var app = new Vue({
   el: '#app',
   data: {
-    message: 'Hello Vue!'
+    message: '欢迎来到我的博客',
+    copyright:"blogs.890vip.cn"
   }
 })
 </script>
