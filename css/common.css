@@ -3,4 +3,13 @@ html,body{
 	padding: 0;
 	height: 100%;
 	width: 100%;
+	font-size: 10px;
+}
+header{
+	height: 40rem;
+	text-align: center;
+}
+footer{
+	height:20rem;
+	text-align: center;
 }
