@@ -20,12 +20,14 @@
 		</div>
 		<div class="clear"></div>
 		<div class="sub-item">
-			<span v-for="sub in subitem" class="sub-item-title" v-text="sub.title"></span>
+			<span v-for="sub in subitem" class="sub-item-title">
+				<router-link :to="{ name: 'detail', params: { id: item.id }}" v-text="sub.title"></router-link>
+			</span>
 		</div>
 	</section>
 	<div class="clear"></div>
     <footer>
-    	{{copyright}}  {{domain}}  {{icp}}
+    	{{copyright}} {{icp}}
     </footer>
 </div>
 <script src="//cdn.bootcss.com/vue/2.2.1/vue.js"></script>

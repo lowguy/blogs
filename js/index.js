@@ -3,7 +3,6 @@ var app = new Vue({
   data: {
     author: '890',
     message: '欢迎来到我的博客',
-    domain:"blogs.890vip.cn",
     icp:"陕ICP备16003703号",
     copyright:"Design by 890",
     selected:0,
