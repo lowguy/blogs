@@ -1,12 +1,12 @@
 {
-	"status":1,
-	"result":{
-		"list":[
-				{title:'PHP',id:1,subitem:[]},
-				{title:'MYSQL',id:2,subitem:[]},
-				{title:'LINUX',id:3,subitem:[]},
-				{title:'经典算法',id:4,subitem:[]},
-				{title:'PHP设计模式',id:5,subitem:[]}
-			]
-		}
+"status":1,
+"result":{
+	"list":[
+			{"title":"PHP","id":1,"subitem":[]},
+			{"title":"MYSQL","id":2,"subitem":[]},
+			{"title":"LINUX","id":3,"subitem":[]},
+			{"title":"经典算法","id":4,"subitem":[]},
+			{"title":"PHP设计模式","id":5,"subitem":[]}
+		]
 	}
+}

@@ -16,9 +16,12 @@ var app = new Vue({
     }
   },
   mounted:function(){
+    var _this = this
     this.$http.get('data/item.json').then((res) => {
         console.log(res)
         //this.items = res.body.result
+    },(res) => {
+        console.log(res)
     })
   }
 })
