@@ -18,6 +18,10 @@ var app = new Vue({
       },(res) => {
           console.log(res)
       })
+    },
+    getDetail:function(pid,cid){
+      console.log(pid)
+      console.log(cid)
     }
   },
   mounted:function(){

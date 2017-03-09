@@ -20,9 +20,7 @@
 		</div>
 		<div class="clear"></div>
 		<div class="sub-item">
-			<span v-for="sub in subitem" class="sub-item-title">
-				<a :href="detail.html" v-text="sub.title"></a>
-			</span>
+			<span v-for="sub in subitem" class="sub-item-title" v-text="sub.title" v-on:click="getDetail(selected,sub.id)"></span>
 		</div>
 	</section>
 	<div class="clear"></div>
