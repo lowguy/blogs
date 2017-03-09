@@ -23,6 +23,7 @@ var app = new Vue({
     var _this = this
     this.$http.get('data/item.json').then((res) => {
         _this.items = res.body.result.list
+        _this.getSubItem(0,'php');
     },(res) => {
         console.log(res)
     })
