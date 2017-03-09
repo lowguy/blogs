@@ -3,13 +3,13 @@ html,body{
 	padding: 0;
 	height: 100%;
 	width: 100%;
-	font-size: 10px;
+	font-size: 83.33%;
 }
 header{
-	height: 40rem;
+	height: 20rem;
 	text-align: center;
 }
 footer{
-	height:20rem;
+	height:10rem;
 	text-align: center;
 }
