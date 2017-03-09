@@ -11,14 +11,17 @@
 			<p>{{ message }}</p>
 		</div>
 	</header>
+	<div class="clear"></div>
 	<section>
 		<div v-for="(item,index) in items" class="item">
-			<p v-text="item.title" class="item-title" v-on:click=getSubItem(index,item.subindex)></p>
+			<span v-text="item.title" class="item-title" v-on:click=getSubItem(index,item.subindex)></span>
 		</div>
+		<div class="clear"></div>
 		<div class="sub-item">
 			<p v-for="sub in subitem" class="sub-item-title" v-text="sub.title"></p>
 		</div>
 	</section>
+	<div class="clear"></div>
     <footer>
     	{{copyright}}
     </footer>

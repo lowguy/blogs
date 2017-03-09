@@ -11,6 +11,9 @@ h1{
 p{
 	font-size: 2rem
 }
+.clear{
+	clear: both;
+}
 header{
 	text-align: center;
     position: relative;
