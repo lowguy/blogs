@@ -8,11 +8,13 @@ var app = new Vue({
   },
   methods:{
     getSubItem:function(index){
-      this.items[index]['subitem'] = [
-        {title:'sdsd'},
-        {title:'sdsd'},
-        {title:'sdsd'}
-      ]
+      var _this = this
+      this.$http.get('data/sub_item.json').then((res) => {
+        console.log(res)
+          _this.items = res.body.result.list
+      },(res) => {
+          console.log(res)
+      })
     }
   },
   mounted:function(){
