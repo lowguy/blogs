@@ -7,10 +7,9 @@ var app = new Vue({
     items:[]
   },
   methods:{
-    getSubItem:function(index){
+    getSubItem:function(index,sub_index){
       var _this = this
       this.$http.get('data/sub_'+index+'.json').then((res) => {
-          _this.items[index]["subitem"] = []
           _this.items[index]["subitem"] = res.body.result
       },(res) => {
           console.log(res)
