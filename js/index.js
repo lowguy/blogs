@@ -9,7 +9,7 @@ var app = new Vue({
   methods:{
     getSubItem:function(index){
       var _this = this
-      if(typeof _this.items[index].subitem == 'undefined'){
+      if(typeof _this.items[index]['subitem'] == 'undefined'){
           this.$set(_this.items[index],"subitem",true)
       }
       this.$http.get('data/sub_'+index+'.json').then((res) => {
