@@ -32,9 +32,9 @@ var app = new Vue({
           console.log(res)
       })
     },
-    comment:function(){
+    commentSub:function(){
       this.comment_title = "提交"
-      this.iscomment = true
+      this.iscomment = !this.iscomment
     }
   },
   mounted:function(){
