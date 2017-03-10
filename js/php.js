@@ -19,12 +19,11 @@ var app = new Vue({
       },(res) => {
           console.log(res)
       })
+      _this.getComment(id)
     },
-    comment:function(){
+    getComment:function(id){
       var _this = this
-      var storage=window.localStorage
-      var id = storage.getItem('id')
-      this.$http.get('/data/php/comment_'+id+'.json').then((res) => {
+      this.$http.get('/data/php/comment/'+id+'.json').then((res) => {
           _this.comment = res.body.result
       },(res) => {
           console.log(res)
