@@ -38,7 +38,8 @@ var app = new Vue({
       if(this.iscomment){
         if(this.author && this.contents){
           this.comment_title = "评论"
-          console.log(this.author)
+          comments = {"author":this.author,"content":this.contents,"comment_time":"2017-03-10"}
+          this.comments.concat(comments)
           this.iscomment = !this.iscomment
         }
       }else{
