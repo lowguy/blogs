@@ -71,3 +71,21 @@ section p,section span{
 	display: block;
     margin-bottom: 0.8rem;
 }
+
+
+/****************详情页面*****************/
+.navigate{
+	min-width:20rem;
+	max-width: 40%;
+	height: 100%;
+	float: left; 
+	background-color: #e8e8e8
+}
+.main{
+	min-width:60rem;
+	max-width: 60%;
+	height: 100%;
+	float: right; 
+	background-color: #dddddd
+}
+/****************详情页面*****************/
