@@ -8,6 +8,7 @@ var app = new Vue({
   },
   methods:{
     getDetail:function(id){
+      this.selected = id
       console.log(id)
     }
   },
