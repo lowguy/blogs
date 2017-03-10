@@ -17,7 +17,7 @@
 			<strong v-if="item.type == 3" v-text="item.content"></strong>
 			<h2 v-if="item.type == 4" v-text="item.content"></h2>
 		</div>
-		<div class="detail-item"><button v-on:click="comment()" v-text="comment_title"></button></div>
+		<div class="detail-item"><button v-on:click="commentSub()" v-text="comment_title"></button></div>
 		<div class="detail-item" v-if="iscomment">
 			<span style="display:block;margin:0.4rem 0"><input type="text" style="width:15rem;height:2.4rem;text-indent: 0.4rem;"></span>
 			<span style="display:block;margin:0.4rem 0"><textarea style="resize: none;width: 35rem;height: 5rem;border-color: #D0D0C9;padding: 0.4rem;"></textarea></span>
