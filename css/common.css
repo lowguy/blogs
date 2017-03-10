@@ -20,6 +20,7 @@ li{
 	font-size: 1.5rem;
 	border-bottom: 0.1rem solid #27AE60;
 	text-indent: 1.2rem;
+	overflow: hidden;
 }
 pre{
 	background: #e8e8e8;
