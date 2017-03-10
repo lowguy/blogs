@@ -1,7 +1,7 @@
 {
 	"result":[
 		{"type":1,"content":"create database db_name;//创建数据库\ncreate database db_name character set utf8;//创建并设置字符集\nalter database db_name character set utf8;//修改数据库的字符集"},
-		{"type":1,"content":"insert into table_name(f1,f2,.....fn) values (v1,v2,.....vn);//一次写入一条"},
+		{"type":1,"content":"一次写入一条"},
 		{"type":1,"content":"delete from table_name [where condition];//一次删除一个表中的\ndelete t1,t2...from t1,t2... [where condition];//一次删除多个表中的"},
 		{"type":1,"content":"update table_name set f1=v1，f2=v2，……fn=vn [where condition];//更新\nupdate t1,t2 set t1.f1 = v1,t2.f2=v2 [where condition];//一次更新多个"},
 	]
