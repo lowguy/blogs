@@ -23,6 +23,11 @@ li{
 .clear{
 	clear: both;
 }
+.active{
+	background-color: #27AE60;
+	color: #fff
+}
+/****************首页****************/
 header{
 	text-align: center;
     position: relative;
@@ -59,10 +64,6 @@ section p,section span{
 .item:first-child{
 	border-left:0;
 }
-.item.active{
-	background-color: #27AE60;
-	color: #fff
-}
 .item-title{
 	font-size: 1.6rem;
 }
@@ -80,7 +81,7 @@ section p,section span{
 	display: block;
     margin-bottom: 0.8rem;
 }
-
+/****************首页****************/
 
 /****************详情页面*****************/
 .navigate{
