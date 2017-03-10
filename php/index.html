@@ -19,7 +19,7 @@
 		</div>
 		<div class="detail-item"><button v-on:click="comment">评论</button></div>
 		<div class="detail-item" v-if="iscomment">
-			<span><input type="text" placeholder="{{placeholder_author}}"></span>
+			<span><input type="text" v-bind:placeholder="{{placeholder_author}}"></span>
 			<span><textarea >2423</textarea></span>
 		</div>
 		<div class="detail-item"><hr/></div>
