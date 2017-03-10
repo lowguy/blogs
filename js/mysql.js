@@ -8,7 +8,7 @@ var app = new Vue({
   },
   methods:{
     getDetail:function(id){
-      conspole.log(id)
+      console.log(id)
     }
   },
   mounted:function(){
