@@ -7,7 +7,7 @@
 <div id="app">
 	<div class="navigate">
 		<ul>
-			<li v-for="nav in item" v-text="nav.title"></li>
+			<li v-for="nav in item" v-text="nav.title" :class=" selected == nav.id ? 'active': ''"></li>
 		</ul>
 	</div>
 	<div class="main">
