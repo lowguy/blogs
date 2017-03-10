@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title>简于形 精于心</title>
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+</head>
+<body>
+<div id="app">
+	<navigate>
+		<div class="container">
+			<h1>{{ author }}</h1>
+			<p>{{ message }}</p>
+		</div>
+	</navigate>
+	<main>
+		<div class="nav">
+			<div v-for="(item,index) in items" class="item" :class="selected == index ? 'active' : ''">
+				<span v-text="item.title" class="item-title" v-on:click="getSubItem(index,item.subindex)"></span>
+			</div>
+		</div>
+		<div class="clear"></div>
+		<div class="sub-item">
+			<span v-for="sub in subitem" class="sub-item-title" v-text="sub.title" v-on:click="getDetail(selected,sub.id)"></span>
+		</div>
+	</main>
+</div>
+<script src="//cdn.bootcss.com/vue/2.2.1/vue.js"></script>
+<script src="//cdn.bootcss.com/vue-resource/1.2.1/vue-resource.js"></script>
+<script src="/js/mysql.js"></script>
+</body>
+</html>
