@@ -104,12 +104,10 @@ section p,section span{
 .navigate{
 	width:20%;
 	max-width: 20rem;
-	height: 100%;
 	float: left; 
 }
 .main{
 	width: 80%;
-	height: 100%;
 	float: left; 
 }
 .detail-item{
