@@ -32,7 +32,7 @@ var app = new Vue({
        var y = dt.getFullYear()
        var month = dt.getMonth()
        month++
-       var d = dt.getDay()
+       var d = dt.getDate()
        var h=dt.getHours()
        var m=dt.getMinutes()
        var s=dt.getSeconds();
