@@ -1,0 +1,32 @@
+<html>
+<head>
+	<title>简于形 精于心</title>
+	<link rel="stylesheet" type="text/css" href="/css/common.css">
+</head>
+<body>
+<div id="app">
+	<header>
+		<div class="container">
+			<h1>{{ author }}</h1>
+			<p>{{ message }}</p>
+		</div>
+	</header>
+	<div class="clear"></div>
+	<div class="navigate">
+		<ul>
+			<li v-for="nav in item" v-text="nav.title" :class=" selected == nav.id ? 'active': ''" v-on:click="getDetail(nav.id)"></li>
+		</ul>
+	</div>
+	<div class="main">
+		<div v-for="item in detail" class="detail-item">
+			<p v-if="item.type == 1" v-html="item.content"></p>
+			<pre v-if="item.type == 2" v-text="item.content"></pre>
+			<strong v-if="item.type == 3" v-text="item.content"></strong>
+		</div>
+	</div>
+</div>
+<script src="/js/vue/vue.min.js"></script>
+<script src="/js/vue/vue-resource.min.js"></script>
+<script src="/js/cal.js"></script>
+</body>
+</html>
