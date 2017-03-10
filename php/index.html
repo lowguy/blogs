@@ -5,6 +5,13 @@
 </head>
 <body>
 <div id="app">
+	<header>
+		<div class="container">
+			<h1>{{ author }}</h1>
+			<p>{{ message }}</p>
+		</div>
+	</header>
+	<div class="clear"></div>
 	<div class="navigate">
 		<ul>
 			<li v-for="nav in item" v-text="nav.title" :class=" selected == nav.id ? 'active': ''" v-on:click="getDetail(nav.id)"></li>
