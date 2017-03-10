@@ -11,6 +11,13 @@ h1{
 p{
 	font-size: 2rem
 }
+li{
+	text-decoration: none;
+	height: 2rem;
+	line-height: 2rem;
+	font-size: 1.5rem;
+	border-bottom: 0.1rem solid #27AE60
+}
 .clear{
 	clear: both;
 }
