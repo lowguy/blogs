@@ -34,7 +34,8 @@ var app = new Vue({
        var d = dt.getDay()
        var h=dt.getHours()
        var m=dt.getMinutes()
-       this.timeStr =  y + "年" + month + "月" + d +"号"+h+":"+m+"分";
+       var s=dt.getSeconds();
+       this.timeStr =  y + "年" + month + "月" + d +"号"+h+":"+m+":"+s;
        t = setTimeout(this.timeShow,1000); //设定定时器，循环执行  
     }
   },
