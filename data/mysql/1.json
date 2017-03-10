@@ -3,6 +3,6 @@
 		{"type":2,"content":"修改数据库的字符集"},
 		{"type":2,"content":"一次写入一条"},
 		{"type":2,"content":"一次删除一个表中的"},
-		{"type":2,"content":"一次更新多个"},
+		{"type":2,"content":"一次更新多个"}
 	]
 }
