@@ -20,7 +20,7 @@ var app = new Vue({
       })
     },
     getDetail:function(pid,cid){
-      console.log(pid)
+      console.log(this.items[pid]['subindex'])
       console.log(cid)
     }
   },
