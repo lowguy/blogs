@@ -7,7 +7,7 @@ var app = new Vue({
     iscomment:false,
     placeholder_author:"请输入您的笔名",
     comment_title:"评论",
-    author:'',
+    author_name:'',
     contents:'',
     item:[],
     detail:[],
