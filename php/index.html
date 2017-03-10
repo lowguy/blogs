@@ -19,8 +19,8 @@
 		</div>
 		<div class="detail-item"><button v-on:click="comment">评论</button></div>
 		<hr/>
-		<div v-for="item in comment" class="detail-item">
-			<span v-text="item.author"></span>:<span v-text="item.content"></span><span v-text="item.comment_time"></span>
+		<div v-for="item in comment" class="detail-item comments">
+			<span v-text="item.author"></span>:<span v-text="item.content"></span><span v-text="item.comment_time" class="comments-time"></span>
 		</div>
 	</div>
 </div>

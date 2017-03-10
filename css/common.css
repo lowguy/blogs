@@ -112,4 +112,12 @@ section p,section span{
 .detail-item{
 	margin: 0.8rem 1.5rem;
 }
+.comments{
+	border-bottom: 0.1rem solid #27AE60;
+    height: 2rem;
+    line-height: 2rem;
+}
+.comments-time{
+	float: right;
+}
 /****************详情页面*****************/
