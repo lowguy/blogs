@@ -38,12 +38,13 @@ var app = new Vue({
       if(this.iscomment){
         if(this.author && this.contents){
           this.comment_title = "评论"
-          console.log(author)
+          console.log(this.author)
+          this.iscomment = !this.iscomment
         }
       }else{
         this.comment_title = "提交"
+        this.iscomment = !this.iscomment
       }
-      this.iscomment = !this.iscomment
     }
   },
   mounted:function(){
