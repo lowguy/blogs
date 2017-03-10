@@ -20,8 +20,9 @@ var app = new Vue({
       })
     },
     getDetail:function(pid,cid){
-      console.log(this.items[pid]['subindex'])
-      console.log(cid)
+      window.location.href = "/"+this.items[pid]['subindex']
+      var storage=window.localStorage
+      storage.setItem('id',cid)
     }
   },
   mounted:function(){
