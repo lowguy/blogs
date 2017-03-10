@@ -7,10 +7,8 @@ var app = new Vue({
     item:[]
   },
   methods:{
-    getSubItem:function(index,subindex){
-      var _this = this
-    },
-    getDetail:function(pid,cid){
+    getDetail:function(id){
+      conspole.log(id)
     }
   },
   mounted:function(){
