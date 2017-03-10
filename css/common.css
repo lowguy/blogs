@@ -75,17 +75,16 @@ section p,section span{
 
 /****************详情页面*****************/
 .navigate{
-	min-width:20rem;
-	max-width: 40%;
+	width:20%;
+	max-width: 20rem;
 	height: 100%;
 	float: left; 
 	background-color: #e8e8e8
 }
 .main{
-	min-width:60rem;
-	max-width: 60%;
+	width: 80%;
 	height: 100%;
-	float: right; 
+	float: left; 
 	background-color: #dddddd
 }
 /****************详情页面*****************/
