@@ -11,8 +11,10 @@ h1{
 p{
 	font-size: 2rem
 }
+ul{
+	list-style-type:none;
+}
 li{
-	text-decoration: none;
 	height: 2rem;
 	line-height: 2rem;
 	font-size: 1.5rem;
