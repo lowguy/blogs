@@ -21,6 +21,10 @@ li{
 	border-bottom: 0.1rem solid #27AE60;
 	text-indent: 1.2rem;
 }
+pre{
+	background: #e8e8e8;
+    padding: 0.8rem;
+}
 .clear{
 	clear: both;
 }
@@ -90,13 +94,11 @@ section p,section span{
 	max-width: 20rem;
 	height: 100%;
 	float: left; 
-	background-color: #e8e8e8
 }
 .main{
 	width: 80%;
 	height: 100%;
 	float: left; 
-	background-color: #dddddd
 }
 .detail-item{
 	margin: 0.8rem 1.5rem;
