@@ -6,21 +6,11 @@
 <body>
 <div id="app">
 	<div class="navigate">
-		<div class="container">
-			<h1>{{ author }}</h1>
-			<p>{{ message }}</p>
-		</div>
+		<ul>
+			<li v-for="nav in item" v-text="nav.title"></li>
+		</ul>
 	</div>
 	<div class="main">
-		<div class="nav">
-			<div v-for="(item,index) in items" class="item" :class="selected == index ? 'active' : ''">
-				<span v-text="item.title" class="item-title" v-on:click="getSubItem(index,item.subindex)"></span>
-			</div>
-		</div>
-		<div class="clear"></div>
-		<div class="sub-item">
-			<span v-for="sub in subitem" class="sub-item-title" v-text="sub.title" v-on:click="getDetail(selected,sub.id)"></span>
-		</div>
 	</div>
 </div>
 <script src="//cdn.bootcss.com/vue/2.2.1/vue.js"></script>
