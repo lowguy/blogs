@@ -9,6 +9,7 @@ var app = new Vue({
   },
   methods:{
     getDetail:function(id){
+      var _this = this
       var storage=window.localStorage
       storage.setItem('id',id)
       this.selected = id
@@ -29,5 +30,6 @@ var app = new Vue({
     var storage=window.localStorage
     var id = storage.getItem('id')
     _this.selected = id
+    _this.getDetail(id)
   }
 })
