@@ -11,6 +11,10 @@
 		</ul>
 	</div>
 	<div class="main">
+		<div v-for="item in detail">
+			<p v-if="item.type == 1" v-html="item.content"></p>
+			<pre v-if="item.type == 2" v-text="item.content"></pre>
+		</div>
 	</div>
 </div>
 <script src="//cdn.bootcss.com/vue/2.2.1/vue.js"></script>

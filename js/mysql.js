@@ -4,14 +4,19 @@ var app = new Vue({
     author: '890',
     message: '欢迎来到我的博客',
     selected:1,
-    item:[]
+    item:[],
+    detail:[]
   },
   methods:{
     getDetail:function(id){
       var storage=window.localStorage
       storage.setItem('id',id)
       this.selected = id
-      console.log(id)
+      this.$http.get('/data/mysql/'+id+'.json').then((res) => {
+          _this.detail = res.body.result
+      },(res) => {
+          console.log(res)
+      })
     }
   },
   mounted:function(){
