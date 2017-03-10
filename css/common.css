@@ -8,7 +8,7 @@ html,body{
 h1{
 	font-size:4rem;
 }
-p,strong,b{
+p,strong,b,button{
 	font-size: 1.6rem
 }
 ul{
@@ -25,6 +25,14 @@ li{
 pre{
 	background: #e8e8e8;
     padding: 0.8rem;
+}
+button{
+	width: 10rem;
+    height: 2.5rem;
+    border-radius: 0.4rem;
+    background-color: #27AE60;
+    color: #fff;
+    border-style: hidden;
 }
 .clear{
 	clear: both;

@@ -17,8 +17,8 @@
 			<strong v-if="item.type == 3" v-text="item.content"></strong>
 			<h2 v-if="item.type == 4" v-text="item.content"></h2>
 		</div>
-		<div><button v-on:click="comment">评论</button></div>
-		<div v-for="item in comment" class="detail-comment">
+		<div class="detail-item"><button v-on:click="comment">评论</button></div>
+		<div v-for="item in comment" class="detail-item">
 			<span v-text="item.author"></span>:<span v-text="item.content"></span><span v-text="item.comment_time"></span>
 		</div>
 	</div>
