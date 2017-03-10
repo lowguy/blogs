@@ -23,6 +23,7 @@
 			<pre v-if="item.type == 2" v-text="item.content"></pre>
 			<strong v-if="item.type == 3" v-text="item.content"></strong>
 			<h2 v-if="item.type == 4" v-text="item.content"></h2>
+			<blockquote v-if="item.type == 5" v-text="item.content"></blockquote>
 		</div>
 		<div class="detail-item"><button v-on:click="commentSub()" v-text="comment_title"></button></div>
 		<div class="detail-item" v-if="iscomment">
