@@ -48,10 +48,37 @@ var app = new Vue({
           this.iscomment = !this.iscomment
           var storage=window.localStorage
           var id = storage.getItem('id')
-          var fso = new ActiveXObject("Scripting.FileSystemObject")
-          var file = fso.GetFile("/data/php/comment/"+id+'.json')
-          var ts = file.OpenAsTextStream(this.comment,true)
-          file.Close()
+          var aXMLFileName = "/data/php/comment/"+id+'.json'
+          try{  
+            if (window.ActiveXObject){  
+              xmlDoc= new ActiveXObject("Microsoft.XMLDOM");  
+              xmlDoc.async = false;    
+              isLoaded = xmlDoc.load(aXMLFileName);   
+            }   
+            else if  
+               (document.implementation && document.implementation.createDocument){  
+                  try{    
+                      xmlDoc = document.implementation.createDocument('', '', null);    
+                      xmlDoc.async = false;    
+                      xmlDoc.load(aXMLFileName);    
+                  } catch(e){    
+                      var xmlhttp = new window.XMLHttpRequest();    
+                      xmlhttp.open("GET",aXMLFileName,false);    
+                      xmlhttp.send(null);    
+                      xmlDoc = xmlhttp.responseXML;    
+                  }    
+            }  
+            else{  
+                alert("load data error");  
+            }  
+          } catch(e){  
+            alert(e.message);  
+          } 
+
+          //var fso = new ActiveXObject("Scripting.FileSystemObject")
+          //var file = fso.GetFile("/data/php/comment/"+id+'.json')
+          //var ts = file.OpenAsTextStream(this.comment,true)
+          //file.Close()
           this.author = ''
           this.contents = ''
         }
