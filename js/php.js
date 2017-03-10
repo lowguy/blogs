@@ -7,6 +7,8 @@ var app = new Vue({
     iscomment:false,
     placeholder_author:"请输入您的笔名",
     comment_title:"评论",
+    author:'',
+    contents:'',
     item:[],
     detail:[],
     comment:[]
@@ -33,7 +35,14 @@ var app = new Vue({
       })
     },
     commentSub:function(){
-      this.comment_title = "提交"
+      if(this.iscomment){
+        if(this.author && this.contents){
+          this.comment_title = "评论"
+          console.log(author)
+        }
+      }else{
+        this.comment_title = "提交"
+      }
       this.iscomment = !this.iscomment
     }
   },
