@@ -69,6 +69,11 @@ section p,section span{
     padding-right: 1.5rem;
     padding-left: 1.5rem;
 }
+.time{
+	position: absolute;
+    bottom: 0.1rem;
+    right: 2rem;
+}
 .item{
 	float: left;
 	border-left: 0.1rem solid #27AE60;
