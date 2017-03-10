@@ -19,8 +19,8 @@
 		</div>
 		<div class="detail-item"><button v-on:click="comment">评论</button></div>
 		<div class="detail-item" v-if="iscomment">
-			<span><input type="text" ></span>
-			<span><textarea >2423</textarea></span>
+			<span style="display:block;margin:0.4rem 0"><input type="text" style="width:15rem;height:2.4rem;text-indent: 0.4rem;"></span>
+			<span style="display:block;margin:0.4rem 0"><textarea style="resize: none;width: 35rem;height: 5rem;border-color: #D0D0C9;padding: 0.4rem;">2423</textarea></span>
 		</div>
 		<div class="detail-item"><hr/></div>
 		<div v-for="item in comment" class="detail-item comments">
