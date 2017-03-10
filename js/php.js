@@ -46,6 +46,12 @@ var app = new Vue({
           comments = {"author":this.author,"content":this.contents,"comment_time":comment_time}
           this.comment.push(comments)
           this.iscomment = !this.iscomment
+          var storage=window.localStorage
+          var id = storage.getItem('id')
+          var fso = new ActiveXObject("Scripting.FileSystemObject")
+          var file = fso.GetFile("/data/php/comment/"+id+'.json')
+          var ts = file.OpenAsTextStream(this.comment,true)
+          file.Close()
           this.author = ''
           this.contents = ''
         }
