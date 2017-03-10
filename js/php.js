@@ -5,7 +5,8 @@ var app = new Vue({
     message: '欢迎来到我的博客',
     selected:1,
     item:[],
-    detail:[]
+    detail:[],
+    comment:[]
   },
   methods:{
     getDetail:function(id){
@@ -15,6 +16,16 @@ var app = new Vue({
       this.selected = id
       this.$http.get('/data/php/'+id+'.json').then((res) => {
           _this.detail = res.body.result
+      },(res) => {
+          console.log(res)
+      })
+    },
+    comment:function(){
+      var _this = this
+      var storage=window.localStorage
+      var id = storage.getItem('id')
+      this.$http.get('/data/php/comment_'+id+'.json').then((res) => {
+          _this.comment = res.body.result
       },(res) => {
           console.log(res)
       })
