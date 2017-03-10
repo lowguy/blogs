@@ -13,7 +13,7 @@ var app = new Vue({
     getSubItem:function(index,subindex){
       var _this = this
       _this.selected = index
-      this.$http.get('data/sub_'+ subindex +'.json').then((res) => {
+      this.$http.get('data/catalog/sub_'+ subindex +'.json').then((res) => {
           _this.subitem = res.body.result
       },(res) => {
           console.log(res)
@@ -26,7 +26,7 @@ var app = new Vue({
   },
   mounted:function(){
     var _this = this
-    this.$http.get('data/item.json').then((res) => {
+    this.$http.get('data/catalog/item.json').then((res) => {
         _this.items = res.body.result.list
         _this.getSubItem(0,'php');
     },(res) => {
