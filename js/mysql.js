@@ -8,6 +8,8 @@ var app = new Vue({
   },
   methods:{
     getDetail:function(id){
+      var storage=window.localStorage
+      storage.setItem('id',id)
       this.selected = id
       console.log(id)
     }
