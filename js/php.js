@@ -6,6 +6,7 @@ var app = new Vue({
     selected:1,
     iscomment:false,
     placeholder_author:"请输入您的笔名",
+    comment_title:"评论",
     item:[],
     detail:[],
     comment:[]
@@ -32,7 +33,8 @@ var app = new Vue({
       })
     },
     comment:function(){
-      this.iscomment = !this.iscomment
+      this.comment_title = "提交"
+      this.iscomment = true
     }
   },
   mounted:function(){
