@@ -98,4 +98,7 @@ section p,section span{
 	float: left; 
 	background-color: #dddddd
 }
+.detail-item{
+	margin: 0.8rem 1.5rem;
+}
 /****************详情页面*****************/

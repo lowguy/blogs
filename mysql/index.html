@@ -11,7 +11,7 @@
 		</ul>
 	</div>
 	<div class="main">
-		<div v-for="item in detail">
+		<div v-for="item in detail" class="detail-item">
 			<p v-if="item.type == 1" v-html="item.content"></p>
 			<pre v-if="item.type == 2" v-text="item.content"></pre>
 		</div>
