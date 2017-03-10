@@ -39,7 +39,10 @@ var app = new Vue({
         if(this.author && this.contents){
           this.comment_title = "评论"
           var myDate = new Date();
-          var comment_time = myDate.getFullYear()+"-"+（myDate.getMonth()+1）+"-"+myDate.getDate()
+          var year = myDate.getFullYear()
+          var month = myDate.getMonth()
+          var day = myDate.getDate()
+          var comment_time = year +"-"+ month +"-"+ day
           comments = {"author":this.author,"content":this.contents,"comment_time":comment_time}
           this.comment.push(comments)
           this.iscomment = !this.iscomment
