@@ -33,7 +33,7 @@ var app = new Vue({
             pag.unshift(i--)
           }
       }else{
-          var middle = this.current - Math.floor(this.showItem / 2 ),
+          var middle = this.currentPage - Math.floor(this.showItem / 2 ),
               i = this.showItem;
           if( middle >  (this.allpage - this.showItem)  ){
              middle = (this.allpage - this.showItem) + 1
@@ -49,7 +49,7 @@ var app = new Vue({
           return
       }
       this.currentPage = index
-      
+
     },
     getDetail:function(pid,cid){
       window.location.href = "/"+this.items[pid]['subindex']
@@ -74,7 +74,7 @@ var app = new Vue({
     var _this = this
     this.$http.get('data/catalog/item.json').then((res) => {
         _this.items = res.body.result.list
-        _this.getSubItem(0,'php');
+        _this.getAllSubItem();
     },(res) => {
         console.log(res)
     })
