@@ -49,6 +49,7 @@ var app = new Vue({
           return
       }
       this.currentPage = index
+      
     },
     getDetail:function(pid,cid){
       window.location.href = "/"+this.items[pid]['subindex']
