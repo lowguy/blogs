@@ -26,19 +26,18 @@
 		</div>
 	</section>
 	<div class="clear"></div>
+	<ul class="pagination" >
+        <li v-show="current != 1" v-on:click="current-- && goto(current)" ><a href="#">上一页</a></li>
+        <li v-for="index in pages" v-on:click="goto(index)" :class="{'active':current == index}" :key="index">
+          <a href="#" >{{index}}</a>
+        </li>
+        <li v-show="allpage != current && allpage != 0 " v-on:click="current++ && goto(current++)"><a href="#" >下一页</a></li>
+    </ul>
+    <div class="clear"></div>
     <footer>
     	{{copyright}} {{icp}}
     </footer>
 </div>
-<script type="text/x-template" id="page">
-        <ul class="pagination" >
-            <li v-show="current != 1" @click="current-- && goto(current)" ><a href="#">上一页</a></li>
-            <li v-for="index in pages" @click="goto(index)" :class="{'active':current == index}" :key="index">
-              <a href="#" >{{index}}</a>
-            </li>
-            <li v-show="allpage != current && allpage != 0 " @click="current++ && goto(current++)"><a href="#" >下一页</a></li>
-        </ul>
-    </script>
 <script src="js/vue/vue.min.js"></script>
 <script src="js/vue/vue-resource.min.js"></script>
 <script src="js/index.js"></script>

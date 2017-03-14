@@ -9,17 +9,46 @@ var app = new Vue({
     t:null,
     selected:0,
     items:[],
-    subitem:[]
+    allSubItem:[],
+    subItem:[],
+    currentPage:1,
+    showItem:5,
+    allPage:10
   },
   methods:{
-    getSubItem:function(index,subindex){
+    getAllSubItem:function(index,subindex){
       var _this = this
       _this.selected = index
       this.$http.get('data/catalog/sub_nav.json').then((res) => {
-          _this.subitem = res.body.result
+          _this.allSubItem = res.body.result
       },(res) => {
           console.log(res)
       })
+    },
+    pages:function(p){
+      var pad = []
+      if(this.currentPage < this.showItem){
+          var i = Math.min(this.showItem,this.allPage)
+          while(i){
+            pag.unshift(i--)
+          }
+      }else{
+          var middle = this.current - Math.floor(this.showItem / 2 ),
+              i = this.showItem;
+          if( middle >  (this.allpage - this.showItem)  ){
+             middle = (this.allpage - this.showItem) + 1
+          }
+          while(i--){
+             pag.push( middle++ );
+          }
+      }
+      return pag
+    },
+    getByPage:function(index){
+      if(index == this.currentPage){
+          return
+      }
+      this.currentPage = index
     },
     getDetail:function(pid,cid){
       window.location.href = "/"+this.items[pid]['subindex']
@@ -51,42 +80,3 @@ var app = new Vue({
     this.t = setTimeout(this.timeShow,1000);//开始执行
   }
 })
-Vue.component("page",{
-      template:"#page",
-        data:function(){
-          return{
-            current:1,
-            showItem:5,
-            allpage:13
-          }
-        },
-        computed:{
-          pages:function(){
-                var pag = [];
-                  if( this.current < this.showItem ){ //如果当前的激活的项 小于要显示的条数
-                       //总页数和要显示的条数那个大就显示多少条
-                       var i = Math.min(this.showItem,this.allpage);
-                       while(i){
-                           pag.unshift(i--);
-                       }
-                   }else{ //当前页数大于显示页数了
-                       var middle = this.current - Math.floor(this.showItem / 2 ),//从哪里开始
-                           i = this.showItem;
-                       if( middle >  (this.allpage - this.showItem)  ){
-                           middle = (this.allpage - this.showItem) + 1
-                       }
-                       while(i--){
-                           pag.push( middle++ );
-                       }
-                   }
-                 return pag
-               }
-      },
-      methods:{
-        goto:function(index){
-          if(index == this.current) return;
-            this.current = index;
-            //这里可以发送ajax请求
-        }
-      }
-    })
