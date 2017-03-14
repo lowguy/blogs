@@ -27,11 +27,11 @@
 	</section>
 	<div class="clear"></div>
 	<ul class="pagination" >
-        <li v-show="current != 1" v-on:click="current-- && getByPage(current)" ><a href="#">上一页</a></li>
-        <li v-for="index in pages" v-on:click="getByPage(index)" :class="{'active':current == index}" :key="index">
+        <li v-show="currentPage != 1" v-on:click="currentPage-- && getByPage(currentPage)" ><a href="#">上一页</a></li>
+        <li v-for="index in pages" v-on:click="getByPage(index)" :class="{'active':currentPage == index}" :key="index">
           <a href="#" >{{index}}</a>
         </li>
-        <li v-show="allpage != current && allpage != 0 " v-on:click="current++ && goto(current++)"><a href="#" >下一页</a></li>
+        <li v-show="allPage != currentPage && allPage != 0 " v-on:click="currentPage++ && goto(currentPage++)"><a href="#" >下一页</a></li>
     </ul>
     <div class="clear"></div>
     <footer>
