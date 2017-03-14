@@ -31,7 +31,7 @@
         <li v-for="index in pages" v-on:click="getByPage(index)" :class="{'active':currentPage == index}" :key="index">
           <a href="#" >{{index}}</a>
         </li>
-        <li v-show="allPage != currentPage && allPage != 0 " v-on:click="currentPage++ && goto(currentPage++)"><a href="#" >下一页</a></li>
+        <li v-show="allPage != currentPage && allPage != 0 " v-on:click="currentPage++ && getByPage(currentPage++)"><a href="#" >下一页</a></li>
     </ul>
     <div class="clear"></div>
     <footer>
