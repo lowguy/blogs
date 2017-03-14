@@ -15,7 +15,7 @@ var app = new Vue({
     getSubItem:function(index,subindex){
       var _this = this
       _this.selected = index
-      this.$http.get('data/catalog/sub_'+ subindex +'.json').then((res) => {
+      this.$http.get('data/catalog/sub_nav.json').then((res) => {
           _this.subitem = res.body.result
       },(res) => {
           console.log(res)
