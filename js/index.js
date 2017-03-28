@@ -16,16 +16,6 @@ var app = new Vue({
     allPage:10
   },
   methods:{
-    getAllSubItem:function(index,subindex){
-      var _this = this
-      _this.selected = index
-      this.$http.get('http://api.890vip.cn/api/blog/index').then((res) => {
-        console.log(res);
-          _this.allSubItem = res.body.result
-      },(res) => {
-          console.log(res)
-      })
-    },
     pages:function(p){
       var pad = []
       if(this.currentPage < this.showItem){
@@ -73,7 +63,7 @@ var app = new Vue({
   },
   mounted:function(){
     var _this = this
-    this.$http.get('data/catalog/item.json').then((res) => {
+    this.$http.get('http://api.890vip.cn/api/blog/index').then((res) => {
         _this.items = res.body.result.list
         _this.getAllSubItem();
     },(res) => {
