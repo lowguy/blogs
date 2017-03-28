@@ -19,7 +19,8 @@ var app = new Vue({
     getAllSubItem:function(index,subindex){
       var _this = this
       _this.selected = index
-      this.$http.get('data/catalog/sub_nav.json').then((res) => {
+      this.$http.get('api.890vip.cn/api/blog/index').then((res) => {
+        console.log(res);
           _this.allSubItem = res.body.result
       },(res) => {
           console.log(res)
