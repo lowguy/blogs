@@ -74,7 +74,7 @@ var app = new Vue({
     var _this = this
     this.$http.get('http://api.890vip.cn/api/blog/index').then((res) => {
         _this.items = res.body.result.list
-        _this.getBlogsByType(0);
+        _this.getBlogsByType(1);
     },(res) => {
         console.log(res)
     })
