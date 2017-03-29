@@ -9,6 +9,7 @@ var app = new Vue({
     t:null,
     selected:0,
     items:[],
+    blogs:[],
     allSubItem:[],
     subItem:[],
     currentPage:1,
@@ -16,6 +17,13 @@ var app = new Vue({
     allPage:10
   },
   methods:{
+    getBlogsByType:function(type){
+      this.$http.get('http://api.890vip.cn/api/blog/lists/type/'+type).then((res) => {
+          _this.blogs = res.body.result.list
+      },(res) => {
+          console.log(res)
+      })
+    },
     pages:function(p){
       var pad = []
       if(this.currentPage < this.showItem){
@@ -65,7 +73,7 @@ var app = new Vue({
     var _this = this
     this.$http.get('http://api.890vip.cn/api/blog/index').then((res) => {
         _this.items = res.body.result.list
-        _this.getAllSubItem();
+        _this.getBlogsByType(0);
     },(res) => {
         console.log(res)
     })
