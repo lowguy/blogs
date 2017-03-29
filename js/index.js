@@ -18,6 +18,7 @@ var app = new Vue({
   },
   methods:{
     getBlogsByType:function(type){
+      var _this = this
       this.$http.get('http://api.890vip.cn/api/blog/lists/type/'+type).then((res) => {
           _this.blogs = res.body.result.list
       },(res) => {
