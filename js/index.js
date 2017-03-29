@@ -17,39 +17,14 @@ var app = new Vue({
     allPage:10
   },
   methods:{
-    getBlogsByType:function(type){
+    getBlogsByType:function(type,index){
       var _this = this
+      _this.selected = index
       this.$http.get('http://api.890vip.cn/api/blog/lists/type/'+type).then((res) => {
           _this.blogs = res.body.result.list
       },(res) => {
           console.log(res)
       })
-    },
-    pages:function(p){
-      var pad = []
-      if(this.currentPage < this.showItem){
-          var i = Math.min(this.showItem,this.allPage)
-          while(i){
-            pag.unshift(i--)
-          }
-      }else{
-          var middle = this.currentPage - Math.floor(this.showItem / 2 ),
-              i = this.showItem;
-          if( middle >  (this.allpage - this.showItem)  ){
-             middle = (this.allpage - this.showItem) + 1
-          }
-          while(i--){
-             pag.push( middle++ );
-          }
-      }
-      return pag
-    },
-    getByPage:function(index){
-      if(index == this.currentPage){
-          return
-      }
-      this.currentPage = index
-
     },
     getDetail:function(pid,cid){
       window.location.href = "/"+this.items[pid]['subindex']
