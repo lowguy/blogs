@@ -4,6 +4,11 @@ html,body{
 	height: 100%;
 	width: 100%;
 	font-size: 62.5%;
+	background: #F6F5F5;
+	font: 14px/1.5 'Helvetica',Arial, Helvetica ,"Microsoft Yahei","Hiragino Sans GB",sans-serif;
+	font-size: 0.16rem;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
 }
 h1{
 	font-size:4rem;
