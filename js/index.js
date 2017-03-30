@@ -26,10 +26,10 @@ var app = new Vue({
           console.log(res)
       })
     },
-    getDetail:function(pid,cid){
-      window.location.href = "/"+this.items[pid]['subindex']
+    getDetail:function(id){
+      window.location.href = "/detail/"
       var storage=window.localStorage
-      storage.setItem('id',cid)
+      storage.setItem('id',id)
     },
     timeShow:function(t){
        clearTimeout(this.t);//清除定时器
