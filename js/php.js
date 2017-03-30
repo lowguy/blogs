@@ -42,18 +42,19 @@ var app = new Vue({
           var month = myDate.getMonth()
           var day = myDate.getDate()
           var comment_time = year +"-"+ month +"-"+ day
+          var storage=window.localStorage
+          var id = storage.getItem('id')
+          var _this = this
           comments = {"author":this.author,"content":this.contents,"comment_time":comment_time}
-          this.$http.post('http://api.890vip.cn/api/blog/comments',{"author":this.author,"content":this.contents}).then((res) => {
-              console.log(res.body.result)
+          this.$http.post('http://api.890vip.cn/api/blog/comments',{"id":id,"author":this.author,"content":this.contents}).then((res) => {
+              _this.comment.push(comments)
+              _this.iscomment = !_this.iscomment
+              _this.author = ''
+              _this.contents = ''
           },(res) => {
               console.log(res)
           })
-          this.comment.push(comments)
-          this.iscomment = !this.iscomment
-          var storage=window.localStorage
-          var id = storage.getItem('id')
-          this.author = ''
-          this.contents = ''
+         
         }
       }else{
         this.comment_title = "提交"
