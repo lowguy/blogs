@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title>简于形 精于心</title>
+	<title>精于心 简于形</title>
 	 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
 	<link rel="stylesheet" type="text/css" href="css/common.css">
 </head>
@@ -26,16 +26,15 @@
 				<div class="masonry-post" v-for="blog in blogs">
 					<div id="post-25022" class="post-25022 post type-post status-publish format-standard has-post-thumbnail hentry category-fd tag-497 tag-data-uri tag-base64 tag-youquedian">
 						<div class="isux-image">
-							<a class="open-single-frame" v-on:click="getDetail(selected,blog.id)"><img width="600" height="300" src="https://isux.tencent.com/wp-content/uploads/2017/03/015901-91692-600x300.png" class="attachment-box-image size-box-image wp-post-image" alt=""><noscript>&lt;img width="600" height="300" src="https://isux.tencent.com/wp-content/uploads/2017/03/015901-91692-600x300.png" class="attachment-box-image size-box-image wp-post-image" alt="" /&gt;</noscript></a>
+							<a class="open-single-frame" v-on:click="getDetail(blog.id)"><img width="600" height="300" src="https://isux.tencent.com/wp-content/uploads/2017/03/015901-91692-600x300.png" class="attachment-box-image size-box-image wp-post-image" alt=""></a>
 						</div>
-						<h2><a class="open-single-frame" v-on:click="getDetail(selected,blog.id)" v-text="blog.title"></a></h2>
+						<h2><a class="open-single-frame" v-on:click="getDetail(blog.id)" v-text="blog.title"></a></h2>
 						<div class="info">
 							<div class="author">
-							    	<img :src="blog.userimg" width="40" height="40" alt="" class="avatar avatar-40 wp-user-avatar wp-user-avatar-40 photo avatar-default"><noscript>&lt;img src="https://isux.tencent.com/wp-content/uploads/2016/08/093901-17534.png" width="40" height="40" alt="" class="avatar avatar-40 wp-user-avatar wp-user-avatar-40 photo avatar-default" /&gt;</noscript>                    
+							    	<img :src="blog.userimg" width="40" height="40" alt="" class="avatar avatar-40 wp-user-avatar wp-user-avatar-40 photo avatar-default">                   
 								<span class="username" v-text="blog.author"></span>  
 							</div>
-							<div class="isux-date" v-text="blog.create_time">
-							</div>
+							<div class="isux-date" v-text="blog.create_time"></div>
 					    	</div>
 					    	<div class="isux-category">
 							<span class="cate-fd" v-text="blog.type"></span>            
