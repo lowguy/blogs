@@ -46,7 +46,7 @@ var app = new Vue({
           var id = storage.getItem('id')
           var _this = this
           comments = {"author":this.author,"content":this.contents,"comment_time":comment_time}
-          this.$http.post('http://api.890vip.cn/api/blog/comments',{"id":id,"author":this.author,"content":this.contents}).then((res) => {
+          this.$http.post('http://api.890vip.cn/api/blog/comments',{"id":id,"author":this.author,"content":this.contents},{emulateJSON:true}).then((res) => {
               _this.comment.push(comments)
               _this.iscomment = !_this.iscomment
               _this.author = ''
