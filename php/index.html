@@ -14,11 +14,6 @@
 	</header>
 	<div class="clear"></div>
 	<div>
-		<div class="navigate">
-			<ul>
-				<li v-for="nav in item" v-text="nav.title" :class=" selected == nav.id ? 'active': ''" v-on:click="getDetail(nav.id)"></li>
-			</ul>
-		</div>
 		<div class="main">
 			<div class="detail-item" v-html="detail.content"></div>
 			<div class="detail-item"><button v-on:click="commentSub()" v-text="comment_title"></button></div>
