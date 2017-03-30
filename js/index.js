@@ -27,7 +27,7 @@ var app = new Vue({
       })
     },
     getDetail:function(id){
-      window.location.href = "/detail/"
+      window.location.href = "/php/"
       var storage=window.localStorage
       storage.setItem('id',id)
     },
