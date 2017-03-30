@@ -269,7 +269,7 @@ h2 {
 }
 .main{
 	width: 80%;
-	float: left; 
+	margin: 0.8rem auto; 
 }
 .detail-item{
 	margin: 0.8rem 1.5rem;
