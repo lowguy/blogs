@@ -43,14 +43,15 @@ var app = new Vue({
           var day = myDate.getDate()
           var comment_time = year +"-"+ month +"-"+ day
           comments = {"author":this.author,"content":this.contents,"comment_time":comment_time}
+          this.$http.post('http://api.890vip.cn/api/blog/comments',comments).then((res) => {
+              console.log(res.body.result)
+          },(res) => {
+              console.log(res)
+          })
           this.comment.push(comments)
           this.iscomment = !this.iscomment
           var storage=window.localStorage
           var id = storage.getItem('id')
-          //var fso = new ActiveXObject("Scripting.FileSystemObject")
-          //var file = fso.GetFile("/data/php/comment/"+id+'.json')
-          //var ts = file.OpenAsTextStream(this.comment,true)
-          //file.Close()
           this.author = ''
           this.contents = ''
         }
