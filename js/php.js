@@ -43,7 +43,7 @@ var app = new Vue({
           var day = myDate.getDate()
           var comment_time = year +"-"+ month +"-"+ day
           comments = {"author":this.author,"content":this.contents,"comment_time":comment_time}
-          this.$http.post('http://api.890vip.cn/api/blog/comments',comments).then((res) => {
+          this.$http.post('http://api.890vip.cn/api/blog/comments',{"author":this.author,"content":this.contents}).then((res) => {
               console.log(res.body.result)
           },(res) => {
               console.log(res)
