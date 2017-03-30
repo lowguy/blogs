@@ -18,10 +18,7 @@ var app = new Vue({
   methods:{
     getDetail:function(id){
       var _this = this
-      var storage=window.localStorage
-      storage.setItem('id',id)
-      this.selected = id
-      this.$http.get('/data/php/'+id+'.json').then((res) => {
+      this.$http.get('http://api.890vip.cn/api/blog/detail/id/'+id).then((res) => {
           _this.detail = res.body.result
       },(res) => {
           console.log(res)
@@ -30,7 +27,7 @@ var app = new Vue({
     },
     getComment:function(id){
       var _this = this
-      this.$http.get('/data/php/comment/'+id+'.json').then((res) => {
+      this.$http.get('http://api.890vip.cn/api/blog/comment/id/'+id).then((res) => {
           _this.comment = res.body.result
       },(res) => {
           console.log(res)
@@ -64,15 +61,8 @@ var app = new Vue({
     }
   },
   mounted:function(){
-    var _this = this
-    this.$http.get('/data/catalog/sub_php.json').then((res) => {
-        _this.item = res.body.result
-    },(res) => {
-        console.log(res)
-    })
     var storage=window.localStorage
     var id = storage.getItem('id')
-    _this.selected = id
-    _this.getDetail(id)
+    this.getDetail(id)
   }
 })
