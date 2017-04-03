@@ -1,0 +1,39 @@
+<html>
+<head>
+	<title>精于心 简于形</title>
+	 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="/css/common.css">
+</head>
+<body>
+<div id="app">
+	<header>
+		<div class="container">
+			<h1>{{ author }}</h1>
+			<p>{{ message }}</p>
+		</div>
+	</header>
+	<div class="clear"></div>
+	<div>
+		<div class="main">
+			<div class="detail-item" v-html="detail.content"></div>
+			<div class="detail-item"><button v-on:click="commentSub()" v-text="comment_title"></button></div>
+			<div class="detail-item" v-if="iscomment">
+				<span style="display:block;margin:0.4rem 0"><input type="text" v-model="author_name" placeholder="name" style="width:15rem;height:2.4rem;text-indent: 0.4rem;"></span>
+				<span style="display:block;margin:0.4rem 0"><textarea style="resize: none;width: 35rem;height: 5rem;border-color: #D0D0C9;padding: 0.4rem;" v-model="contents" placeholder="content"></textarea></span>
+			</div>
+			<div class="detail-item"><hr/></div>
+			<div v-for="item in comment" class="detail-item comments">
+				<span v-text="item.author"></span>:<span v-text="item.content"></span><span v-text="item.comment_time" class="comments-time"></span>
+			</div>
+		</div>
+	</div>
+	<div class="clear"></div>
+	<footer>
+    	{{copyright}} {{icp}}
+    </footer>
+</div>
+<script src="/js/vue/vue.min.js"></script>
+<script src="/js/vue/vue-resource.min.js"></script>
+<script src="/js/detail.js"></script>
+</body>
+</html>
