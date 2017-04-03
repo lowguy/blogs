@@ -1,9 +1,0 @@
-{
-	"result":[
-		{"type":1,"content":"冒泡排序(从小到大)<br/>基本思想：两两比较相邻记录，一次循环确定一个数"},
-		{"type":5,"content":"在所有的排序算法中是最慢的，尤其当数据量较大的时候，数据小体现不出来"},
-		{"type":2,"content":"function bubble_sort(&$arr){\n\t$len = count($arr);\n\tfor($i = 0;$i < $len-1;$i++){\n\t\tfor($j = $i;$j < $len;$j++){\n\t\t\tif($arr[$i] > $arr[$j]){\n\t\t\t\t$temp = $arr[$i];\n\t\t\t\t$arr[$i] = $arr[$j];\n\t\t\t\t$arr[$j] = $temp;\n\t\t\t}\n\t\t}\n\t}\n}\n$arr = array(9,2,8,3,7,4,6,5,1);\nbubble_sort($arr);\nvar_dump($arr);"},
-		{"type":2,"content":"第1轮对比:1,9,8,3,7,4,6,5,2\n第2轮对比:1,2,9,8,7,4,6,5,3\n第3轮对比:1,2,3,9,8,7,6,5,4\n第4轮对比:1,2,3,4,9,8,7,6,5\n第5轮对比:1,2,3,4,5,9,8,7,6\n第6轮对比:1,2,3,4,5,6,9,8,7\n第7轮对比:1,2,3,4,5,6,7,9,8\n第8轮对比:1,2,3,4,5,6,7,8,9"},
-		{"type":6,"content":"http://images.cnblogs.com/cnblogs_com/kkun/201111/201111301912294099.gif"}
-	]
-}

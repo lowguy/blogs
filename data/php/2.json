@@ -1,7 +1,0 @@
-{
-	"result":[
-		{"type":1,"content":"声明类属性或方法为静态\n可以不实例化类而直接访问]n静态属性不能通过一个类已实例化的对象来访问（但静态方法可以）也就是说不能用$this来调用"},
-		{"type":2,"content":"class Foo\n{\n\tpublic static $my_static = 'foo';\n\tpublic function staticValue() {\n\t\treturn self::$my_static;\n\t}\n}\necho Foo::$my_static;//foo\nFoo::$my_static = '890';\necho Foo::$my_static;//890\n\n$new = new Foo();\n$new->$my_static;//语法错误"},
-		{"type":1,"content":"可以看出静态变量是属于类，是属于适合此类所有对象的共同属性；"}
-	]
-}

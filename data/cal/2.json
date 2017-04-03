@@ -1,7 +1,0 @@
-{
-	"result":[
-		{"type":1,"content":"快速排序(从小到大)<br/>基本思想：分治思想，找出一个元素（理论上可以随便找一个）作为基准(pivot),然后对数组进行分区操作"},
-		{"type":2,"content":"function quick_sort($arr){\n\t$len = count($arr);\n\tif($len <= 1) return $arr;\n\t$key = $arr[0];\n\t$left_arr = array();\n\t$right_arr = array();\n\tfor($i=1;$i<$len;$i++){\n\t\tif($arr[$i] <= $key){\n\t\t\t$left_arr[] = $arr[$i];\n\t\t}else{\n\t\t\t$right_arr[] = $arr[$i];\n\t\t}\n\t}\n\t$left_arr = quick_sort($left_arr);\n\t$right_arr = quick_sort($right_arr);\n\treturn array_merge($left_arr,array($key),$right_arr);\n}\n$arr = array(9,2,8,3,7,4,6,5,1);\n$array = quick_sort($arr);"},
-		{"type":1,"content":"经测试同样的数组排序，冒泡使用了24次循环，而快速排序使用了9次"}
-	]
-}

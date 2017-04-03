@@ -1,6 +1,0 @@
-{
-	"result":[
-		{"type":1,"content":"首先二分法查找操作的数组必须是一个递增的数组；<br/>二分法查找原理：就是永远的将数组一分为二的进行对比<br/>//$arr 目标数组，$key为要找的值，$low为查找范围的最小键值，$high为查找范围的最大键值"},
-		{"type":2,"content":"function bin_search($arr,$key,$low=0,$high=0){\n\tif($high ==0 && count($arr)!=0){\n\t\t$high = count($arr);\n\t}\n\tif($low <= $high){\n\t\t$mid = intval(($low+$high)/2);\n\t\tif($arr[$mid] == $key){\n\t\t\treturn $mid;\n\t\t}elseif($key < $arr[$mid]){\n\t\t\treturn bin_search($arr,$key,$low,$mid-1);\n\t\t}else{\n\t\t\treturn bin_search($arr,$key,$mid+1,$high);\n\t\t}\n\t}\n\treturn \"没有找到\";\n}\n$arr = array(2,4,5,6,7,8,9);\necho bin_search($arr,7);//4"}
-	]
-}
