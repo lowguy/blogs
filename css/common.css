@@ -62,17 +62,6 @@ footer{
 	font-size: 1.6rem;
 	text-align: center;
 }
-section{
-	max-width: 80%;
-	margin: 1.5rem auto; 
-}
-section p,section span{
-	cursor: pointer;
-} 
-.container {
-    padding-right: 1.5rem;
-    padding-left: 1.5rem;
-}
 .time{
 	position: absolute;
     bottom: 0.1rem;

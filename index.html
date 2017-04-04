@@ -3,7 +3,7 @@
 	<title>精于心 简于形</title>
 	 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
 	 <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-	<!-- <link rel="stylesheet" type="text/css" href="css/common.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/common.css">
 </head>
 <body>
 <div id="app">
@@ -13,8 +13,7 @@
 		<span class="time" v-text="timeStr"></span>
 	</div>
 	<div class="clear"></div>
-	<section>
-
+	<div class="container">
 		<div class="nav">
 			<ul class="nav nav-tabs">
 			  <li role="presentation" v-for="(item,index) in items" :class="selected == index ? 'active' : ''">
@@ -23,7 +22,7 @@
 			</ul>
 		</div>
 		<div class="clear"></div>
-		<div class="container post-area-frame main-wrap">
+		<div class="post-area-frame main-wrap">
 			<div id="post-area">
 				<div class="masonry-post" v-for="blog in blogs">
 					<div id="post-25022" class="post-25022 post type-post status-publish format-standard has-post-thumbnail hentry category-fd tag-497 tag-data-uri tag-base64 tag-youquedian">
@@ -45,7 +44,7 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</div>
 	<div class="clear"></div>
 	<footer>
 		{{copyright}} {{icp}}
