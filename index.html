@@ -14,13 +14,16 @@
 	</div>
 	<div class="clear"></div>
 	<section>
+
 		<div class="nav">
-			<div v-for="(item,index) in items" class="item" :class="selected == index ? 'active' : ''">
-				<span v-text="item.title" class="item-title" v-on:click="getBlogsByType(item.id,index)"></span>
-			</div>
+			<ul class="nav nav-tabs">
+			  <li role="presentation" v-for="(item,index) in items" :class="selected == index ? 'active' : ''">
+			  	<a href="#" v-text="item.title" v-on:click="getBlogsByType(item.id,index)"></a>
+			  </li>
+			</ul>
 		</div>
 		<div class="clear"></div>
-		<div class="post-area-frame main-wrap">
+		<div class="container post-area-frame main-wrap">
 			<div id="post-area">
 				<div class="masonry-post" v-for="blog in blogs">
 					<div id="post-25022" class="post-25022 post type-post status-publish format-standard has-post-thumbnail hentry category-fd tag-497 tag-data-uri tag-base64 tag-youquedian">
