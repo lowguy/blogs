@@ -7,15 +7,8 @@
 </head>
 <body>
 <div id="app">
-	<header>
-		<div class="container">
-			<h1>{{ author }}</h1>
-			<p>{{ message }}</p>
-		</div>
-	</header>
-	<div class="clear"></div>
 	<div>
-		<div class="main">
+		<div class="container">
 			<div class="detail-item" v-html="detail.content"></div>
 			<div class="detail-item"><button v-on:click="commentSub()" v-text="comment_title"></button></div>
 			<div class="detail-item" v-if="iscomment">
