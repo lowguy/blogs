@@ -14,13 +14,13 @@
 	</div>
 	<div class="clear"></div>
 	<div class="container">
-		<div class="nav">
+		<!-- <div class="nav">
 			<ul class="nav nav-tabs">
 			  <li role="presentation" v-for="(item,index) in items" :class="selected == index ? 'active' : ''">
 			  	<a href="#" v-text="item.title" v-on:click="getBlogsByType(item.id,index)"></a>
 			  </li>
 			</ul>
-		</div>
+		</div> -->
 		<div class="clear"></div>
 		<div class="post-area-frame main-wrap">
 			<div id="post-area">
@@ -46,9 +46,9 @@
 		</div>
 	</div>
 	<div class="clear"></div>
-	<footer>
+	<div class="footer">
 		{{copyright}} {{icp}}
-	</footer>
+	</div>
 </div>
 <script src="js/vue/vue.min.js"></script>
 <script src="js/vue/vue-resource.min.js"></script>

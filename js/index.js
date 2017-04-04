@@ -10,11 +10,6 @@ var app = new Vue({
     selected:0,
     items:[],
     blogs:[],
-    allSubItem:[],
-    subItem:[],
-    currentPage:1,
-    showItem:5,
-    allPage:10
   },
   methods:{
     getBlogsByType:function(type,index){
@@ -47,12 +42,13 @@ var app = new Vue({
   },
   mounted:function(){
     var _this = this
-    this.$http.get('http://api.890vip.cn/api/blog/index').then((res) => {
-        _this.items = res.body.result.list
-        _this.getBlogsByType(1);
-    },(res) => {
-        console.log(res)
-    })
+    _this.getBlogsByType(1);
+    // this.$http.get('http://api.890vip.cn/api/blog/index').then((res) => {
+    //     _this.items = res.body.result.list
+    //     _this.getBlogsByType(1);
+    // },(res) => {
+    //     console.log(res)
+    // })
     this.t = setTimeout(this.timeShow,1000);//开始执行
   }
 })
