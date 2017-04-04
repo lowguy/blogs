@@ -49,7 +49,7 @@ button{
 	color: #fff
 }
 /****************首页****************/
-header{
+.header{
 	text-align: center;
     position: relative;
     background-color: #27AE60;
