@@ -7,18 +7,21 @@
 </head>
 <body>
 <div id="app">
-	<div>
-		<div class="container">
-			<div class="detail-item" v-html="detail.content"></div>
-			<div class="detail-item"><button v-on:click="commentSub()" v-text="comment_title"></button></div>
-			<div class="detail-item" v-if="iscomment">
-				<span style="display:block;margin:0.4rem 0"><input type="text" v-model="author_name" placeholder="name" style="width:15rem;height:2.4rem;text-indent: 0.4rem;"></span>
-				<span style="display:block;margin:0.4rem 0"><textarea style="resize: none;width: 35rem;height: 5rem;border-color: #D0D0C9;padding: 0.4rem;" v-model="contents" placeholder="content"></textarea></span>
-			</div>
-			<div class="detail-item"><hr/></div>
-			<div v-for="item in comment" class="detail-item comments">
-				<span v-text="item.author"></span>:<span v-text="item.content"></span><span v-text="item.comment_time" class="comments-time"></span>
-			</div>
+	<div class="container-fluid header">
+		<h1 v-text="detail.title"></h1>
+		<p v-text="detail.author"></p>
+	</div>
+	<div class="clear"></div>
+	<div class="container">
+		<div class="detail-item" v-html="detail.content"></div>
+		<div class="detail-item"><button v-on:click="commentSub()" v-text="comment_title"></button></div>
+		<div class="detail-item" v-if="iscomment">
+			<span style="display:block;margin:0.4rem 0"><input type="text" v-model="author_name" placeholder="name" style="width:15rem;height:2.4rem;text-indent: 0.4rem;"></span>
+			<span style="display:block;margin:0.4rem 0"><textarea style="resize: none;width: 35rem;height: 5rem;border-color: #D0D0C9;padding: 0.4rem;" v-model="contents" placeholder="content"></textarea></span>
+		</div>
+		<div class="detail-item"><hr/></div>
+		<div v-for="item in comment" class="detail-item comments">
+			<span v-text="item.author"></span>:<span v-text="item.content"></span><span v-text="item.comment_time" class="comments-time"></span>
 		</div>
 	</div>
 	<div class="clear"></div>
