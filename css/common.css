@@ -48,6 +48,15 @@ button{
 	background-color: #27AE60;
 	color: #fff
 }
+/****************commom****************/
+.vip-m-t15{
+    margin-top: 0.15rem;
+}
+.vip-over-hide{
+    overflow: hidden;
+}
+/****************common****************/
+
 /****************首页****************/
 .header{
 	text-align: center;
@@ -71,9 +80,7 @@ button{
 /****************首页****************/
 
 /*****************列表***************/
-.post-area-frame {
-    margin: 40px auto 0;
-}
+
 #post-area {
     width: 100%;
     overflow: hidden;
@@ -218,6 +225,9 @@ h2 {
     text-align: center;
     font-size: 16px;
     font-weight: 100;
+}
+.vip-container{
+    margin-top: 0.15rem
 }
 /*****************列表***************/
 
