@@ -81,11 +81,7 @@ button{
 
 /*****************列表***************/
 
-#post-area {
-    width: 100%;
-    overflow: hidden;
-}
-#post-area .masonry-post {
+.post-area {
     position: relative;
     z-index: 2;
     overflow: hidden;
@@ -102,14 +98,12 @@ button{
     -moz-transition: all .3s ease;
     transition: all .3s ease;
 }
-#post-area .masonry-post .type-post {
-    overflow: hidden;
-}
-#post-area .masonry-post .isux-image {
+
+.post-area .image {
     overflow: hidden;
     background: #aaa;
 }
-#post-area .masonry-post .isux-image .open-single-frame {
+.post-area .image .open-single-frame {
     display: block;
     padding-top: 53%;
     position: relative;
@@ -122,7 +116,7 @@ a {
     color: #008E59;
     text-decoration: none;
 }
-#post-area .masonry-post .isux-image img {
+.post-area .image img {
     position: absolute;
     top: 0;
     left: 0;
@@ -130,19 +124,15 @@ a {
     height: 100%;
     display: block;
 }
-#post-area .masonry-post h2 {
+.post-area h2 {
     height: 50px;
-    font-size: 30px;
     padding: 0 20px;
-}
-h2 {
     margin: 0px;
-    padding: 0px;
     color: #000;
     font-weight: bold;
     font-size: 0.32rem;
 }
-#post-area .masonry-post h2 a {
+.post-area h2 a {
     display: inline-block;
     overflow: hidden;
     box-sizing: border-box;
@@ -156,27 +146,27 @@ h2 {
     font-size: 0.20rem;
     line-height: 50px;
 }
-#post-area .masonry-post .info {
+.post-area .info {
     position: relative;
     padding: 0 20px;
     overflow: hidden;
 }
-#post-area .masonry-post .author {
+.post-area .author {
     float: left;
     display: block;
     text-align: left;
 }
-#post-area .masonry-post .author, #post-area .masonry-post .isux-date {
+.post-area .author, .post-area .date {
     height: 40px;
     line-height: 40px;
 }
-#post-area .masonry-post .author img {
+.post-area .author img {
     float: left;
     width: 40px;
     height: 40px;
     border-radius: 20px;
 }
-#post-area .masonry-post .author .username {
+.post-area .author .username {
     float: left;
     overflow: hidden;
     margin-left: 10px;
@@ -189,7 +179,7 @@ h2 {
     font-size: 16px;
     line-height: 40px;
 }
-#post-area .masonry-post .isux-date {
+.post-area .date {
     float: left;
     overflow: hidden;
     margin-left: 10px;
@@ -198,20 +188,20 @@ h2 {
     white-space: nowrap;
     font-size: 14px;
 }
-#post-area .masonry-post .author, #post-area .masonry-post .isux-date {
+.post-area .author, .post-area .date {
     height: 40px;
     line-height: 40px;
 }
-#post-area .masonry-post .isux-category {
+.post-area .category {
     height: 40px;
     margin-bottom: -8px;
     margin-right: 12px;
 }
-#post-area .masonry-post .isux-category, .latestone .post-cate {
+.post-area .category, .latestone .post-cate {
     position: relative;
     float: right;
 }
-#post-area .masonry-post .isux-category span, .latestone .post-cate span {
+.post-area .category span, .latestone .post-cate span {
     float: left;
     overflow: hidden;
     margin: 0 3px;
@@ -225,9 +215,6 @@ h2 {
     text-align: center;
     font-size: 16px;
     font-weight: 100;
-}
-.vip-container{
-    margin-top: 0.15rem
 }
 /*****************列表***************/
 
