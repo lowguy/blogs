@@ -95,7 +95,7 @@ button{
     transition: all .3s ease;
 }
 .post-area:hover{
-    box-shadow: #00a0e9 0 0 3px;
+    box-shadow: #888 0 0 5px;
 }
 .post-area .image {
     overflow: hidden;
