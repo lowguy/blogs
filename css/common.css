@@ -50,7 +50,7 @@ button{
 }
 /****************commom****************/
 .vip-m-t15{
-    margin-top: 0.15rem;
+    margin-top: 1.5rem;
 }
 .vip-over-hide{
     overflow: hidden;
@@ -92,8 +92,6 @@ button{
     width: 100%;
     background: #fff;
     float: left;
-    width: calc(25% - 30px);
-    width: -webkit-calc(25% - 30px);
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
     transition: all .3s ease;
