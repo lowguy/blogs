@@ -88,15 +88,15 @@ button{
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    margin: 0 15px 30px;
     width: 100%;
     background: #fff;
-    float: left;
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
     transition: all .3s ease;
 }
-
+.post-area:hover{
+    box-shadow: #00a0e9 0 0 3px;
+}
 .post-area .image {
     overflow: hidden;
     background: #aaa;
