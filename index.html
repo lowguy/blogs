@@ -22,16 +22,18 @@
 							<img src="https://isux.tencent.com/wp-content/uploads/2017/03/015901-91692-600x300.png"  alt="">
 						</a>
 					</div>
-					<h2 v-on:click="getDetail(blog.id)" v-text="blog.title"></h2>
-					<div class="info">
-						<div class="author">
-							<img :src="blog.userimg" width="40" height="40" alt="" class="avatar">
-							<span class="username" v-text="blog.author"></span>
+					<div class="content">
+						<h2 v-on:click="getDetail(blog.id)" v-text="blog.title"></h2>
+						<div class="info">
+							<div class="author">
+								<img :src="blog.userimg" width="40" height="40" alt="" class="avatar">
+								<span class="username" v-text="blog.author"></span>
+							</div>
+							<div class="date" v-text="blog.create_time"></div>
 						</div>
-						<div class="date" v-text="blog.create_time"></div>
-					</div>
-					<div class="category">
-						<span class="cate-fd" v-text="blog.type"></span>
+						<div class="category">
+							<span class="cate-fd" v-text="blog.type"></span>
+						</div>
 					</div>
 				</div>
 			</div>
