@@ -22,9 +22,7 @@
 							<img src="https://isux.tencent.com/wp-content/uploads/2017/03/015901-91692-600x300.png"  alt="">
 						</a>
 					</div>
-					<h2>
-						<a class="open-single-frame" v-on:click="getDetail(blog.id)" v-text="blog.title"></a>
-					</h2>
+					<h2 v-on:click="getDetail(blog.id)" v-text="blog.title"></h2>
 					<div class="info">
 						<div class="author">
 							<img :src="blog.userimg" width="40" height="40" alt="" class="avatar">
