@@ -123,13 +123,14 @@ a {
     display: block;
 }
 .post-area h2 {
-    height: 50px;
-    padding: 0 20px;
-    margin: 0px;
+    height: 2.4rem;
+    max-height:4.8 
+    line-height: 2.4rem;
+    padding: 0 2rem;
+    margin: 0.8rem auto;
     color: #000;
     font-weight: bold;
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-size: 2rem;
 }
 .post-area .info {
     position: relative;
