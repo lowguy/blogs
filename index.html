@@ -15,13 +15,13 @@
 	<div class="clear"></div>
 	<div class="container row">
 		<div class="row">
-			<div class="col-md-6 col-sm-6" v-for="blog in blogs" style="background:#fff;height:80px">
-				<!--<div id="post-25022" class="post-25022 post type-post status-publish format-standard has-post-thumbnail hentry category-fd tag-497 tag-data-uri tag-base64 tag-youquedian">
+			<div class="col-md-6" v-for="blog in blogs">
+				<div class="post-area">
 					<div class="isux-image">
 						<a class="open-single-frame" v-on:click="getDetail(blog.id)"><img width="600" height="300" src="https://isux.tencent.com/wp-content/uploads/2017/03/015901-91692-600x300.png" class="attachment-box-image size-box-image wp-post-image" alt=""></a>
 					</div>
 					<h2><a class="open-single-frame" v-on:click="getDetail(blog.id)" v-text="blog.title"></a></h2>
-					<div class="info">
+					<!--<div class="info">
 						<div class="author">
 								<img :src="blog.userimg" width="40" height="40" alt="" class="avatar avatar-40 wp-user-avatar wp-user-avatar-40 photo avatar-default">
 							<span class="username" v-text="blog.author"></span>
@@ -30,8 +30,8 @@
 						</div>
 						<div class="isux-category">
 						<span class="cate-fd" v-text="blog.type"></span>
-					</div>
-				</div>-->
+					</div>-->
+				</div>
 			</div>
 		</div>
 	</div>
