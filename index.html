@@ -18,10 +18,9 @@
 			<li v-for="blog in blogs" v-on:click="getDetail(blog.id)">
 				<img src="https://isux.tencent.com/wp-content/uploads/2017/03/015901-91692-600x300.png"  alt="">
 				<div class="text-area">
-					<div class="time">2016/ 12/ 9</div>
-					<h2>预告 | 12月9日ofo暖冬季，<br>
-						骑车就有奖！</h2>
-					<p>ofo将向全社会发出“城市大共享”计划的邀请，欢迎全球的自行车品牌与生产商将自行车整车硬件、自行车服务接入 ofo 平台，共同为用户提供差异化、个性化的自行车出行服务。同时，也鼓励个人将自己的闲置自行车共享出来以 1 换 N，换取更多服务。</p>
+					<div class="time" v-text="blog.create_time"></div>
+					<h2 v-text="blog.title"></h2>
+					<p>890</p>
 				</div>
 			</li>
 		</ul>
