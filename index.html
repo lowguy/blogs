@@ -1,76 +1,78 @@
 <html>
 <head>
-	<title>精于心 简于形</title>
-	 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
-	 <link rel="stylesheet" type="text/css" href="css/common.css">
-	 <link rel="stylesheet" type="text/css" href="css/blog.css">
+    <title>精于心 简于形</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/blog.css">
 </head>
 <body>
 <div id="app">
-	<header>
-		<div id="nav" class="col-1140">
-			<div class="logo">
-				<a href="../">
-					<img src="/images/footer_logo.png" alt="">
-				</a>
-			</div>
-			<div class="nav-item nav-item-y">
-				<ul>
-					<li>
-						<a href="../">首页</a>
-						<span class="nav-out"></span>
-					</li>
-					<li>
-						<a href="../about">屌丝</a>
-						<span class="nav-out"></span>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</header>
-	<div class="content">
-		<div class="banner" style="position: relative">
-			<div style="position: absolute;text-align: center;font-size: 50px;margin-top: 200px;width: 100%;">
-				<p>不疯狂，枉年少</p>
-				<p>执着追梦，不负此生</p>
-			</div>
-		</div>
-	</div>
-	<div class="clear"></div>
-	<div class="post-list">
-		<ul>
-			<li v-for="blog in blogs" v-on:click="getDetail(blog.id)">
-				<img :src="blog.thumb"  alt="">
-				<div class="text-area">
-					<div class="time" v-text="blog.create_time"></div>
-					<h2 v-text="blog.title"></h2>
-					<p v-text="blog.brief">890</p>
-				</div>
-			</li>
-		</ul>
-	</div>
-	<div class="clear"></div>
-	<footer>
-		<div class="col-1140">
-			<div class="fbar clearfix">
-				<div class="fcnt">
-					<div class="fbar-logo">
-						<img src="/images/footer_logo.png" alt="">
-					</div>
-					<div class="fcnt-social">
-						<a href="http://weibo.com/u/2512240754?topnav=1&amp;wvr=6&amp;topsug=1&amp;is_all=1" id="weibo" target="_block"></a>
-						<a href="javascript:;" id="wechat" ></a>
-					</div>
-					<div class="wechat-qrcode">
-						<img src="http://img.890vip.cn/blog/wx/wx-qrcode.jpg" alt="">
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="ficp">
-			<p class="finfo">Copyright © 2017 890vip Inc. 保留所有权利。{{icp}}</p>
-		</div>
-	</footer>
+    <header>
+        <div id="nav" class="col-1140">
+            <div class="logo">
+                <a href="../">
+                    <img src="/images/footer_logo.png" alt="">
+                </a>
+            </div>
+            <div class="nav-item nav-item-y">
+                <ul>
+                    <li>
+                        <a href="../">首页</a>
+                        <span class="nav-out"></span>
+                    </li>
+                    <li>
+                        <a href="../about">屌丝</a>
+                        <span class="nav-out"></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="content">
+        <div class="banner" style="position: relative">
+            <div style="position: absolute;text-align: center;font-size: 50px;margin-top: 200px;width: 100%;">
+                <p>不疯狂，枉年少</p>
+                <p>执着追梦，不负此生</p>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div class="post-list">
+        <ul>
+            <li v-for="blog in blogs" v-on:click="getDetail(blog.id)">
+                <img :src="blog.thumb" alt="">
+                <div class="text-area">
+                    <div class="time" v-text="blog.create_time"></div>
+                    <h2 v-text="blog.title"></h2>
+                    <p v-text="blog.brief">890</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="clear"></div>
+    <footer>
+        <div class="col-1140">
+            <div class="fbar clearfix">
+                <div class="fcnt">
+                    <div class="fbar-logo">
+                        <img src="/images/footer_logo.png" alt="">
+                    </div>
+                    <div class="fcnt-social">
+                        <a href="http://weibo.com/u/2512240754?topnav=1&amp;wvr=6&amp;topsug=1&amp;is_all=1" id="weibo"
+                           target="_block"></a>
+                        <a href="javascript:;" id="wechat"></a>
+                    </div>
+                    <div class="wechat-qrcode">
+                        <img src="http://img.890vip.cn/blog/wx/wx-qrcode.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ficp">
+            <p class="finfo">Copyright © 2017 890vip Inc. 保留所有权利。{{icp}}</p>
+        </div>
+    </footer>
 </div>
 <script src="js/vue/vue.min.js"></script>
 <script src="js/vue/vue-resource.min.js"></script>
