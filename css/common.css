@@ -85,3 +85,66 @@ th, td{vertical-align:top;}
     left: 0;
     background: #fff;
 }
+
+
+footer {
+    width: 100%;
+    height: 310px;
+    background: #191919;
+}
+.fbar {
+    position: relative;
+    padding: 60px 0 26px;
+}
+.fbar .fcnt {
+    width: 270px;
+    margin: 0 auto;
+    text-align: center;
+}
+.fbar .fcnt .fbar-logo {
+    width: 75px;
+    height: 72px;
+    margin: 0 auto;
+}
+.finfo.text1 {
+    padding: 12px 0 6px;
+}
+.finfo {
+    padding: 12px 0 18px;
+    font-size: 12px;
+    color: #a3a3a3;
+    text-align: center;
+}
+p {
+    word-break: break-all;
+}
+.fbar .fcnt .fcnt-social {
+    text-align: center;
+}
+.fbar .fcnt .fcnt-social a#weibo {
+    margin-right: 22px;
+    background-position: 0 0;
+}
+.fbar .fcnt .fcnt-social a#wechat {
+    background-position: -24px 0;
+}
+.fbar .fcnt .fcnt-social a {
+    display: inline-block;
+    width: 24px;
+    height: 22px;
+    background: url(../images/social_icon.png);
+}
+.ficp {
+    border-top: 1px solid #2b2b2b;
+}
+.ficp .finfo {
+    height: 50px;
+    line-height: 50px;
+    padding: 0;
+}
+.finfo {
+    padding: 12px 0 18px;
+    font-size: 12px;
+    color: #a3a3a3;
+    text-align: center;
+}
