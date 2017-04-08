@@ -162,6 +162,6 @@ p {
     z-index: 9;
     display: none;
 }
-.fbar .fcnt .fcnt-social a#wechat:hover + .wechat-qrcode {
+a#wechat:hover + .wechat-qrcode {
     display: block;
 }
