@@ -154,14 +154,19 @@ p {
 }
 .wechat-qrcode {
     position: absolute;
-    width: 200px;
-    height: 200px;
-    top: -200px;
+    width: 100px;
+    height: 100px;
+    top: 50px;
     left: 50%;
     margin-left: -100px;
     z-index: 9;
     display: none;
 }
 a#wechat:hover + .wechat-qrcode {
+    -webkit-transform:rotate(720deg) scale(2,2);
+    -moz-transform:rotate(720deg) scale(2,2);
+    -o-transform:rotate(720deg) scale(2,2);
+    -ms-transform:rotate(720deg) scale(2,2);
+    top:-200px;
     display: block;
 }
