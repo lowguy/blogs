@@ -38,7 +38,7 @@
 	<div class="post-list">
 		<ul>
 			<li v-for="blog in blogs" v-on:click="getDetail(blog.id)">
-				<img src="https://isux.tencent.com/wp-content/uploads/2017/03/015901-91692-600x300.png"  alt="">
+				<img :src="blog.thumb"  alt="">
 				<div class="text-area">
 					<div class="time" v-text="blog.create_time"></div>
 					<h2 v-text="blog.title"></h2>
