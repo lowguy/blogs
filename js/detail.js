@@ -61,8 +61,11 @@ var app = new Vue({
     }
   },
   mounted:function(){
-    var storage=window.localStorage
-    var id = storage.getItem('id')
+    var id =  this.$route.query.id;
+    if(!id){
+        var storage=window.localStorage
+        var id = storage.getItem('id')
+    }
     this.getDetail(id)
   }
 })
