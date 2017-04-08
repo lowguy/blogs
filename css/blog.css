@@ -3,3 +3,18 @@
     height: calc(100% / 4);
     background-color: #00a65a;
 }
+.container{
+    width: 120rem;
+    margin: 1.5rem auto;
+}
+.container .item{
+    width: 45rem;
+    height: 60rem;
+    float: left;
+}
+.container .item:nth-child(odd){
+    margin-left: 3rem;
+}
+.container .item .blog,.container .item .blog .image,.container .item .blog .image img{
+    width: 100%;
+}
