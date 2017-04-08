@@ -148,3 +148,13 @@ p {
     color: #a3a3a3;
     text-align: center;
 }
+.wechat-qrcode {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    top: 24px;
+    left: 50%;
+    margin-left: -75px;
+    z-index: 9;
+    display: none;
+}
