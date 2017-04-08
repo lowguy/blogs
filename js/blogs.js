@@ -5,10 +5,6 @@ var app = new Vue({
         message: '欢迎来到我的博客',
         icp: "陕ICP备16003703号",
         copyright: "Design by 890",
-        timeStr: "2017年3月10号 16:50",
-        t: null,
-        selected: 0,
-        items: [],
         blogs: []
     },
     methods: {
