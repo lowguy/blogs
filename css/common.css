@@ -154,11 +154,11 @@ p {
 }
 .wechat-qrcode {
     position: absolute;
-    width: 140px;
-    height: 140px;
-    top: 24px;
+    width: 200px;
+    height: 200px;
+    top: -200px;
     left: 50%;
-    margin-left: -75px;
+    margin-left: -100px;
     z-index: 9;
     display: none;
 }
