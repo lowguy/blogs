@@ -138,6 +138,9 @@ body {
     line-height: 10px;
     background-position: -31px -106px;
 }
+.toolbtn-prev {
+    margin: 36px 0 1px;
+}
 .icon-tool-prev {
     width: 10px;
     height: 17px;
