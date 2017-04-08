@@ -38,12 +38,3 @@ body, input, button, textarea
 a{ text-decoration:none;outline:none;}
 a:hover{ cursor:pointer;}
 th, td{vertical-align:top;}
-
-.container{
-    width: 100rem;
-    margin: 1.5rem auto;
-}
-.container-fluid{
-    width: calc(100% - 3rem);
-    margin: 1.5rem auto;
-}
