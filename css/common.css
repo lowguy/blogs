@@ -14,7 +14,9 @@ table
 }
 fieldset, img
 {
-    border:0;
+    display: block;
+    width: 100%;
+    border: 0;
 }
 em, strong
 {
@@ -38,3 +40,48 @@ body, input, button, textarea
 a{ text-decoration:none;outline:none;}
 a:hover{ cursor:pointer;}
 th, td{vertical-align:top;}
+
+.col-1140, .col-970, .col-912, .col-800, .col-684 {
+    width: 1140px;
+    margin: 0 auto;
+    position: relative;
+}
+#nav .logo {
+    width: 54px;
+    height: 54px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -27px;
+}
+#nav .nav-item {
+    height: 26px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -13px;
+}
+#nav .nav-item li {
+    width: auto;
+    height: 26px;
+    line-height: 26px;
+    position: relative;
+    display: inline-block;
+    margin-left: 44px;
+    font-size: 0;
+}
+#nav .nav-item li a {
+    display: block;
+    font-size: 16px;
+    color: #fff;
+    opacity: 0.8;
+}
+#nav .nav-item li span {
+    width: 0;
+    height: 1px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+}
