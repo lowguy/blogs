@@ -106,6 +106,7 @@ body {
 }
 .icon {
     background-image: url(../images/sprite.png);
+    margin-top: 20px;
 }
 .icon, .nav-login a, .tool-help-btn a, .mode-horizon .icon-tool-prev, .mode-horizon .icon-tool-next {
     display: inline-block;
