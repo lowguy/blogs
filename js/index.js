@@ -10,7 +10,7 @@ var app = new Vue({
     selected:0,
     items:[],
     blogs:[],
-      wxshow:false
+    wxshow:false
   },
   methods:{
     toggleWx:function (wxshow) {
