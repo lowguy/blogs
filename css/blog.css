@@ -22,6 +22,10 @@
     height: 610px;
     float: left;
     background-color: #fff;
+    margin-bottom: 30px;
+}
+.post-list li:hover{
+    box-shadow: #888 0 0 10px;
 }
 .post-list li:nth-child(even) {
     float: right;
