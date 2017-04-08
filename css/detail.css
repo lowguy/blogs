@@ -55,20 +55,13 @@ body {
     top: 0;
     left: -190px;
     overflow: hidden;
+    background: url(../images/bookshelf-book-bg.png) repeat-x;
 }
 
 .bookshelf-book {
     position: relative;
     float: right;
     height: 350px;
-}
-.bookshelf-book-close {
-    width: 150px;
-    height: 13px;
-    padding: 20px 20px 18px;
-    line-height: 13px;
-    text-align: right;
-    background: url(../images/bookshelf-book-bg.png) repeat-x;
 }
 .icon {
     background-image: url(../images/sprite.png);
@@ -117,7 +110,7 @@ body {
 }
 .bookshelf-book-info {
     width: 110px;
-    margin: 0 40px;
+    margin: 35px 40px;
     text-align: center;
 }
 .bookshelf-book-title {
