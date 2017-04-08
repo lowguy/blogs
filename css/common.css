@@ -1,247 +1,49 @@
-html,body{
-	margin: 0;
-	padding: 0;
-	height: 100%;
-	width: 100%;
-	font-size: 62.5%;
-	background: #F6F5F5;
-	font: 14px/1.5 'Helvetica',Arial, Helvetica ,"Microsoft Yahei","Hiragino Sans GB",sans-serif;
-	text-rendering: optimizeLegibility;
-	-webkit-font-smoothing: antialiased;
+html
+{
+    color:#000;
+    background:#FFF;
 }
-h1{
-	font-size:4rem;
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td
+{
+    margin:0;padding:0;font-size: 62.5%;
 }
-h2{
-	font-size: 2rem;
+table
+{
+    border-collapse:collapse;
+    border-spacing:0;
 }
-p,strong,b,button{
-	font-size: 1.6rem
+fieldset, img
+{
+    border:0;
 }
-ul{
-	list-style-type:none;
+em, strong
+{
+    font-style:normal;
+    font-weight:normal;
 }
-li{
-	height: 2rem;
-	line-height: 2rem;
-	font-size: 1.5rem;
-	border-bottom: 0.1rem solid #27AE60;
-	text-indent: 1.2rem;
-	overflow: hidden;
+li
+{
+    list-style:none;
 }
-pre{
-	background: #e8e8e8;
-    padding: 0.8rem;
+h1, h2, h3, h4, h5, h6
+{
+    font-size:100%;
+    font-weight:normal;
 }
-button{
-	width: 10rem;
-    height: 2.5rem;
-    border-radius: 0.4rem;
-    background-color: #27AE60;
-    color: #fff;
-    border-style: hidden;
+body, input, button, textarea
+{
+    font-size:1.4rem;
+    font-family:Arial, Helvetica, sans-serif;
 }
-.clear{
-	clear: both;
-}
-.active{
-	background-color: #27AE60;
-	color: #fff
-}
-/****************commom****************/
-.vip-m-t15{
-    margin-top: 1.5rem;
-}
-.vip-over-hide{
-    overflow: hidden;
-}
-/****************common****************/
+a{ text-decoration:none;outline:none;}
+a:hover{ cursor:pointer;}
+th, td{vertical-align:top;}
 
-/****************首页****************/
-.header{
-	text-align: center;
-    position: relative;
-    background-color: #27AE60;
-    color: #fff;
-    margin-bottom: 0;
-    padding:4rem 0;
+.container{
+    width: 100rem;
+    margin: 1.5rem auto;
 }
-.footer{
-	height:10rem;
-	font-size: 1.6rem;
-	text-align: center;
+.container-fluid{
+    width: calc(100% - 3rem);
+    margin: 1.5rem auto;
 }
-.time{
-	position: absolute;
-    bottom: 0.1rem;
-    right: 2rem;
-}
-
-/****************首页****************/
-
-/*****************列表***************/
-
-.post-area {
-    position: relative;
-    z-index: 2;
-    overflow: hidden;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 100%;
-    background: #fff;
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    transition: all .3s ease;
-}
-.post-area:hover{
-    box-shadow: #888 0 0 5px;
-}
-.post-area .image {
-    overflow: hidden;
-    background: #aaa;
-}
-.post-area .image .open-single-frame {
-    display: block;
-    padding-top: 53%;
-    position: relative;
-}
-a:visited {
-    color: #008E59;
-    text-decoration: none;
-}
-a {
-    color: #008E59;
-    text-decoration: none;
-}
-.post-area .image img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: block;
-}
-.post-area h2 {
-    height: 50px;
-    padding: 0 20px;
-    margin: 0px;
-    color: #000;
-    font-weight: bold;
-    font-size: 0.32rem;
-}
-.post-area h2 a {
-    display: inline-block;
-    overflow: hidden;
-    box-sizing: border-box;
-    width: 100%;
-    height: 50px;
-    color: #000;
-    vertical-align: top;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    font-weight: normal;
-    font-size: 0.20rem;
-    line-height: 50px;
-}
-.post-area .info {
-    position: relative;
-    padding: 0 20px;
-    overflow: hidden;
-}
-.post-area .author {
-    float: left;
-    display: block;
-    text-align: left;
-}
-.post-area .author, .post-area .date {
-    height: 40px;
-    line-height: 40px;
-}
-.post-area .author img {
-    float: left;
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-}
-.post-area .author .username {
-    float: left;
-    overflow: hidden;
-    margin-left: 10px;
-    height: 40px;
-    max-width: 87px;
-    color: #737373;
-    vertical-align: top;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    font-size: 16px;
-    line-height: 40px;
-}
-.post-area .date {
-    float: left;
-    overflow: hidden;
-    margin-left: 10px;
-    color: #a3a3a3;
-    text-align: left;
-    white-space: nowrap;
-    font-size: 14px;
-}
-.post-area .author, .post-area .date {
-    height: 40px;
-    line-height: 40px;
-}
-.post-area .category {
-    height: 40px;
-    margin-bottom: -8px;
-    margin-right: 12px;
-}
-.post-area .category, .latestone .post-cate {
-    position: relative;
-    float: right;
-}
-.post-area .category span, .latestone .post-cate span {
-    float: left;
-    overflow: hidden;
-    margin: 0 3px;
-    width: 38px;
-    height: 38px;
-    line-height: 38px;
-    border: 1px solid #e6e6e6;
-    -webkit-border-radius: 40px;
-    border-radius: 40px;
-    color: #ccc;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 100;
-}
-/*****************列表***************/
-
-/****************详情页面*****************/
-.navigate{
-	width:20%;
-	max-width: 20rem;
-	float: left; 
-}
-.main{
-	width: 80%;
-	margin: 0.8rem auto; 
-}
-.detail-item{
-	margin: 0.8rem 1.5rem;
-    background-color: #fff;
-    padding: 0.8rem;
-    box-shadow: 0px 1px 4px #888888;
-}
-.detail-item span{
-    height: 2.5rem;
-    line-height: 2.5rem;
-}
-.comments{
-	border-bottom: 0.1rem solid #27AE60;
-    height: 2rem;
-    line-height: 2rem;
-}
-.comments-time{
-	float: right;
-}
-/****************详情页面*****************/
