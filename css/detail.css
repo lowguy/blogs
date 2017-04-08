@@ -68,6 +68,7 @@ body {
     padding: 20px 20px 18px;
     line-height: 13px;
     text-align: right;
+    background: url(../images/bookshelf-book-bg.png) repeat-x;
 }
 .icon {
     background-image: url(../images/sprite.png);

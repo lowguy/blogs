@@ -64,7 +64,7 @@ var app = new Vue({
     var id =  this.$route.query.id;
     if(!id){
         var storage=window.localStorage
-        var id = storage.getItem('id')
+        id = storage.getItem('id')
     }
     this.getDetail(id)
   }
