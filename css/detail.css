@@ -1,3 +1,8 @@
+body {
+    font: 14px/1 arial, 'pingfangsc', 'microsoft yahei', sans-serif;
+    color: #000;
+    background: url(../images/bg.png);
+}
 #wrap {
     padding-top: 68px;
     overflow: hidden;
