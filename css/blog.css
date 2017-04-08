@@ -1,7 +1,10 @@
-.header{
+.banner {
     width: 100%;
-    height: calc(100% / 4);
-    background-color: #00a65a;
+    height: 780px;
+    position: relative;
+    background: url(../images/banner.jpg) no-repeat;
+    background-position: top center;
+    display: table;
 }
 .clear{
     clear: both;
