@@ -5,9 +5,6 @@ header {
     top: 0;
     z-index: 9;
 }
-#nav {
-    height: 100px;
-}
 
 .banner {
     width: 100%;
@@ -64,10 +61,4 @@ header {
 .text-area p {
     font-size: 14px;
     line-height: 28px;
-}
-.show{
-    display: block;
-}
-.hide{
-    display: none;
 }

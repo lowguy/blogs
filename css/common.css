@@ -46,6 +46,9 @@ th, td{vertical-align:top;}
     margin: 0 auto;
     position: relative;
 }
+#nav{
+    height: 100px;
+}
 #nav .logo {
     width: 54px;
     height: 54px;
@@ -128,6 +131,7 @@ p {
 .fbar .fcnt .fcnt-social a#wechat {
     background-position: -24px 0;
 }
+
 .fbar .fcnt .fcnt-social a {
     display: inline-block;
     width: 24px;
@@ -157,4 +161,7 @@ p {
     margin-left: -75px;
     z-index: 9;
     display: none;
+}
+.fbar .fcnt .fcnt-social a#wechat:hover + .wechat-qrcode {
+    display: block;
 }
