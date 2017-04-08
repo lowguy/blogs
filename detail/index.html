@@ -1,9 +1,7 @@
 <html>
 <head>
-	<title>精于心 简于形</title>
-	 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
-	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="/css/common.css">
+	<title>������ ������</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
 	<link rel="stylesheet" type="text/css" href="/css/detail.css">
 </head>
 <body>
@@ -11,47 +9,31 @@
 	<div class="clear"></div>
 	<div id="wrap">
 		<div id="main" class="wp">
-			<div id="toolbtn">
-				<a href="javascript:;" class="toolbtn-dir"><i class="icon icon-tool-dir"></i><span class="help-text">查看目录</span></a>
-				<a href="javascript:;" class="toolbtn-set" name="tool-setting"><i class="icon icon-tool-set"></i><span class="help-text">修改设置</span></a>
-				<a href="javascript:;" class="toolbtn-fullscreen"><i class="icon icon-tool-fullscreen"></i><span class="help-text">全屏模式</span></a>
-				<a href="javascript:;" class="toolbtn-help"><i class="icon icon-tool-help"></i><span class="help-text">查看帮助</span></a>
-				<a href="javascript:;" class="toolbtn-prev"><i class="icon icon-tool-up"></i><i class="icon icon-tool-prev"></i><span class="help-text">查看上一页</span></a>
-				<a href="javascript:;" class="toolbtn-next"><i class="icon icon-tool-down"></i><i class="icon icon-tool-next"></i><span class="help-text">查看下一页</span></a>
+			<div class="book-header">
+				<div class="book-header-wrap">
+					<div id="bookshelf">
+						<div class="bookshelf-book">
+							<div class="bookshelf-book-info">
+								<em class="bookshelf-book-title" v-text="detail.title"></em>
+								<span class="bookshelf-book-qrcode"><img src="/images/img/qrcode.png"></span>
+								<span class="bookshelf-book-scan"></span>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div class="book-view">
 				<div class="book-list" >
 					<div class="book-wrap">
 						<h2 class="book-title" v-html="detail.title"></h2>
-						<div class="book-content" v-html="detail.content"></div>
+						<div class="book-content" v-html="detail.content">
+
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="clear"></div>
-	<footer>
-		<div class="col-1140">
-			<div class="fbar clearfix">
-
-				<div class="fcnt">
-					<div class="fbar-logo">
-						<img src="/images/footer_logo.png" alt="">
-					</div>
-					<div class="fcnt-social">
-						<a href="http://weibo.com/u/5122220173?topnav=1&amp;wvr=6&amp;topsug=1&amp;is_all=1" id="weibo" target="_block"></a>
-						<a href="javascript:;" id="wechat"></a>
-					</div>
-					<div class="wechat-qrcode">
-						<img src="../dist/images/wx-qrcode.jpg" alt="">
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="ficp">
-			<p class="finfo">Copyright © 2017 890vip Inc. 保留所有权利。{{icp}}</p>
-		</div>
-	</footer>
 </div>
 <script src="/js/vue/vue.min.js"></script>
 <script src="/js/vue/vue-resource.min.js"></script>

@@ -53,49 +53,14 @@ body {
 #bookshelf {
     position: absolute;
     top: 0;
+    left: -190px;
     overflow: hidden;
 }
-.tool-btn, .bookshelf-btn {
-    position: relative;
-}
-.bookshelf-btn {
-    display: none;
-    float: right;
-    margin-right: -60px;
-}
-.bookshelf-btn .toolbtn-bookshelf {
-    height: 87px;
-    line-height: 87px;
-}
-.bookshelf-btn .help-text {
-    left: auto;
-    right: 66px;
-}
-.bookshelf-btn .help-text {
-    top: 30px;
-}
-.help-text {
-    width: 4em;
-    padding: 8px 10px;
-    top: 16px;
-    left: 66px;
-}
-.help-text, .tool-set-text {
-    display: none;
-    position: absolute;
-    border-radius: 2px;
-    line-height: 1em;
-    text-align: center;
-    color: #FFF;
-    font-size: 12px;
-    background: #676665\9;
-    background: rgba(96, 96, 96, 0.949);
-}
+
 .bookshelf-book {
-    _position: relative;
+    position: relative;
     float: right;
-    height: 606px;
-    background: url(../images/bookshelf-book-bg.png) repeat-x;
+    height: 350px;
 }
 .bookshelf-book-close {
     width: 150px;
@@ -106,9 +71,8 @@ body {
 }
 .icon {
     background-image: url(../images/sprite.png);
-    margin-top: 20px;
 }
-.icon, .nav-login a, .tool-help-btn a, .mode-horizon .icon-tool-prev, .mode-horizon .icon-tool-next {
+.icon, .icon-tool-prev, .icon-tool-next {
     display: inline-block;
 }
 .icon-tool-dir, .theme-white .dir-active .icon-tool-dir {
