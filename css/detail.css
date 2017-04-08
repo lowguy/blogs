@@ -180,10 +180,28 @@ body {
     z-index: 2;
     position: relative;
     overflow: hidden;
+    margin-bottom: 15px;
 }
 .book-list {
     padding: 70px 0 0.5em;
     background: #FDF9F3;
     width: 100%;
     font-size: 18px;
+}
+.book .book-wrap {
+    padding-top: 2em;
+}
+.book-wrap {
+    width: 700px;
+    margin: 0 100px;
+}
+.book-title {
+    font-size: 1.7em;
+    font-weight: normal;
+    color: #A34544;
+}
+.book-content {
+    padding-top: 2em;
+    color: #222;
+    line-height: 2em;
 }
