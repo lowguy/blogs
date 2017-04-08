@@ -6,19 +6,42 @@
 .clear{
     clear: both;
 }
-.container{
-    width: 120rem;
-    margin: 1.5rem auto;
-    background-color: #0a001f;
-}
-.container .item{
-    width: 30rem;
-    height: 40rem;
-    float: left;
-}
-.container .item:nth-child(odd){
-    margin-left: 3rem;
-}
-.container .item .blog,.container .item .blog .image,.container .item .blog .image img{
+.post-list{
     width: 100%;
+    background-color: #f5f5f5;
+}
+.post-list ul {
+    padding-bottom: 200px;
+    width: 830px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-top: 120px;
+}
+.post-list li {
+    width: 400px;
+    height: 610px;
+    float: left;
+    background-color: #fff;
+}
+.post-list li:nth-child(even) {
+    float: right;
+}
+.post-list img {
+    width: 400px;
+    height: 280px;
+}
+.text-area {
+    padding: 30px;
+    color: #585858;
+}
+.text-area .time {
+    font-size: 14px;
+}
+.text-area h2 {
+    font-size: 24px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+.text-area p {
+    font-size: 14px;
 }
