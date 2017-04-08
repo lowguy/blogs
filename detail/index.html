@@ -4,30 +4,105 @@
 	 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
 	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="/css/common.css">
+	<link rel="stylesheet" type="text/css" href="/css/detail.css">
 </head>
 <body>
 <div id="app">
-	<div class="container-fluid header">
-		<h1 v-text="detail.title"></h1>
-		<p v-text="detail.author"></p>
+	<header>
+		<div id="nav" class="col-1140">
+			<div class="logo">
+				<a href="../">
+					<img src="../dist/images/logo.png" alt="">
+				</a>
+			</div>
+			<div class="nav-item nav-item-y">
+				<ul>
+
+					<li>
+						<a href="../">首页</a>
+						<span class="nav-out"></span>
+					</li>
+					<li>
+						<a href="../about">屌丝</a>
+						<span class="nav-out"></span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<div class="clear"></div>
+	<div id="wrap">
+		<div id="main" class="wp">
+			<div id="toolbtn">
+				<a href="javascript:;" class="toolbtn-dir"><i class="icon icon-tool-dir"></i><span class="help-text">查看目录</span></a>
+				<a href="javascript:;" class="toolbtn-set" name="tool-setting"><i class="icon icon-tool-set"></i><span class="help-text">修改设置</span></a>
+				<a href="javascript:;" class="toolbtn-fullscreen"><i class="icon icon-tool-fullscreen"></i><span class="help-text">全屏模式</span></a>
+				<a href="javascript:;" class="toolbtn-help"><i class="icon icon-tool-help"></i><span class="help-text">查看帮助</span></a>
+				<a href="javascript:;" class="toolbtn-prev"><i class="icon icon-tool-up"></i><i class="icon icon-tool-prev"></i><span class="help-text">查看上一页</span></a>
+				<a href="javascript:;" class="toolbtn-next"><i class="icon icon-tool-down"></i><i class="icon icon-tool-next"></i><span class="help-text">查看下一页</span></a>
+			</div>
+			<div class="book-header">
+				<div class="book-header-wrap">
+					<div id="bookshelf">
+						<div class="bookshelf-btn">
+							<a href="javascript:;" class="toolbtn-bookshelf"><i class="icon icon-tool-bookshelf"></i></a>
+							<span class="help-text">书籍信息</span>
+						</div>
+						<div class="bookshelf-book">
+							<div class="bookshelf-book-close">
+								<a href="javascript:;"><i class="icon icon-close"></i></a>
+							</div>
+							<div class="bookshelf-book-info">
+								<em class="bookshelf-book-title">人民的名义</em>
+								<a href="/book/info/51CCD64DDF0C14070026674D631D2F98?" class="bookshelf-book-cover"><img src="http://img01.sogoucdn.com/app/a/10070003/BED726E62555C9558431109033E152D3"></a>
+
+								<a href="javascript:;" class="bookself-book-added">已加入书架</a>
+
+								<span class="bookshelf-book-qrcode"><img src="/images/img/qrcode.png"></span>
+								<span class="bookshelf-book-scan">扫码下载阅读</span>
+							</div>
+						</div>
+					</div>
+					<div class="book-wrap">
+						<a href="javascript:;" class="book-ctrl">
+							<i class="icon icon-ctrl-hide"></i><span class="book-ctrl-hide">隐藏</span><span class="book-ctrl-show">显示</span>工具栏
+						</a>
+						<p class="book-header-title">一</p>
+					</div>
+				</div>
+			</div>
+			<div class="book-view">
+				<div class="book-list" v-html="detail.content">
+
+				</div>
+			</div>
+		</div>
 	</div>
 	<div class="clear"></div>
-	<div class="container">
-		<div class="detail-item" v-html="detail.content"></div>
-		<div class="detail-item"><button v-on:click="commentSub()" v-text="comment_title"></button></div>
-		<div class="detail-item" v-if="iscomment">
-			<span style="display:block;margin:0.4rem 0"><input type="text" v-model="author_name" placeholder="name" style="width:15rem;height:2.4rem;text-indent: 0.4rem;"></span>
-			<span style="display:block;margin:0.4rem 0"><textarea style="resize: none;width: 35rem;height: 5rem;border-color: #D0D0C9;padding: 0.4rem;" v-model="contents" placeholder="content"></textarea></span>
+	<footer>
+		<div class="col-1140">
+			<div class="fbar clearfix">
+
+				<div class="fcnt">
+					<div class="fbar-logo">
+						<img src="/images/footer_logo.png" alt="">
+					</div>
+					<p class="finfo text1">4001&nbsp;507&nbsp;507（周一至周日：7:00 - 24:00）</p>
+					<p class="finfo text2">北京市海淀区北四环西路58号理想国际大厦11层</p>
+					<div class="fcnt-social">
+						<a href="http://weibo.com/u/5122220173?topnav=1&amp;wvr=6&amp;topsug=1&amp;is_all=1" id="weibo" target="_block"></a>
+						<a href="javascript:;" id="wechat"></a>
+					</div>
+					<div class="wechat-qrcode">
+						<img src="../dist/images/wx-qrcode.jpg" alt="">
+					</div>
+				</div>
+			</div>
 		</div>
-		<div class="detail-item" v-if="comment != ''"><hr/></div>
-		<div v-for="item in comment" class="detail-item comments" v-if="comment != ''">
-			<span v-text="item.author"></span>:<span v-text="item.content"></span><span v-text="item.comment_time" class="comments-time"></span>
+		<div class="ficp">
+			<p class="finfo">Copyright © 2017 ofo Inc. 保留所有权利。京公网安备 11010802022978号 &nbsp;&nbsp;|&nbsp;&nbsp; 公共事务邮箱  gr@ofo.so    商务合作邮箱  bdinchina@ofo.so</p>
 		</div>
-	</div>
-	<div class="clear"></div>
-	<div class="footer">
-    	{{copyright}} {{icp}}
-    </div>
+	</footer>
 </div>
 <script src="/js/vue/vue.min.js"></script>
 <script src="/js/vue/vue-resource.min.js"></script>
