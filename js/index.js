@@ -10,8 +10,12 @@ var app = new Vue({
     selected:0,
     items:[],
     blogs:[],
+      wxshow:0
   },
   methods:{
+    toggleWx:function (wxshow) {
+        this.wxshow = wxshow
+    },
     getBlogsByType:function(type,index){
       var _this = this
       _this.selected = index

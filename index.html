@@ -59,10 +59,10 @@
 					</div>
 					<div class="fcnt-social">
 						<a href="http://weibo.com/u/2512240754?topnav=1&amp;wvr=6&amp;topsug=1&amp;is_all=1" id="weibo" target="_block"></a>
-						<a href="javascript:;" id="wechat"></a>
+						<a href="javascript:;" id="wechat" :mouseover="toggleWx(1)" :mouseout="toggleWx(0)"></a>
 					</div>
-					<div class="wechat-qrcode">
-						<img src="../dist/images/wx-qrcode.jpg" alt="">
+					<div class="wechat-qrcode" :class="{wxshow == 1 ? 'show' : 'hide'}">
+						<img src="http://img.890vip.cn/blog/wx/wx-qrcode.jpg" alt="">
 					</div>
 				</div>
 			</div>
