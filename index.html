@@ -61,7 +61,7 @@
 						<a href="http://weibo.com/u/2512240754?topnav=1&amp;wvr=6&amp;topsug=1&amp;is_all=1" id="weibo" target="_block"></a>
 						<a href="javascript:;" id="wechat" :mouseover="toggleWx(true)" :mouseout="toggleWx(false)"></a>
 					</div>
-					<div class="wechat-qrcode" :class="">
+					<div v-bind:class="[wxshow ? show : 'hide', wechat-qrcode]">
 						<img src="http://img.890vip.cn/blog/wx/wx-qrcode.jpg" alt="">
 					</div>
 				</div>
