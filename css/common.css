@@ -46,6 +46,13 @@ th, td{vertical-align:top;}
     margin: 0 auto;
     position: relative;
 }
+header {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    z-index: 9;
+}
 #nav{
     height: 100px;
 }
