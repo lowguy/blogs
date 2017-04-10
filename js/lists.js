@@ -8,9 +8,8 @@ var app = new Vue({
         blogs: []
     },
     methods: {
-        getBlogsByType: function (type, index) {
+        getBlogs: function () {
             var _this = this
-            _this.selected = index
             this.$http.get('http://api.890vip.cn/api/blog/lists').then((res) => {
                 _this.blogs = res.body.result
             }, (res) => {
@@ -25,6 +24,6 @@ var app = new Vue({
     },
     mounted: function () {
         var _this = this
-        _this.getBlogsByType(1);
+        _this.getBlogs();
     }
 })
