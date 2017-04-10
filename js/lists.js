@@ -11,8 +11,8 @@ var app = new Vue({
         getBlogsByType: function (type, index) {
             var _this = this
             _this.selected = index
-            this.$http.get('http://api.890vip.cn/api/blog/lists/type/' + type).then((res) => {
-                _this.blogs = res.body.result.list
+            this.$http.get('http://api.890vip.cn/api/blog/lists').then((res) => {
+                _this.blogs = res.body.result
             }, (res) => {
                 console.log(res)
             })
