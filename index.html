@@ -11,22 +11,14 @@
     <header>
         <div id="nav" class="col-1140">
             <div class="logo">
-                <a href="../">
+                <a href="/">
                     <img src="/images/footer_logo.png" alt="">
                 </a>
             </div>
             <div class="nav-item nav-item-y">
                 <ul>
-                    <li>
-                        <a href="/">首页</a>
-                        <span class="nav-out"></span>
-                    </li>
-                    <li>
-                        <a href="/lists/">博客</a>
-                        <span class="nav-out"></span>
-                    </li>
-                    <li>
-                        <a href="/team">屌丝</a>
+                    <li v-for="menu in menus">
+                        <a href="/" v-text="menu.title">首页</a>
                         <span class="nav-out"></span>
                     </li>
                 </ul>
@@ -49,7 +41,7 @@
                 <div class="text-area">
                     <div class="time" v-text="blog.create_time"></div>
                     <h2 v-text="blog.title"></h2>
-                    <p v-text="blog.brief">890</p>
+                    <p v-text="blog.brief"></p>
                 </div>
             </li>
         </ul>
