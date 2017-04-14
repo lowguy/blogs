@@ -10,6 +10,7 @@ var app = new Vue({
     },
     methods: {
         getMenus: function () {
+            var _this = this
             this.$http.get('http://api.890vip.cn/api/menu/menulist').then((res) => {
                 _this.menus = res.body.result
             }, (res) => {
