@@ -23,6 +23,14 @@ var app = new Vue({
         },
         login:function () {
             var storage = window.localStorage
+            if(this.user_name == ''){
+                this.user_name_p = '用户账户不能为空'
+                return false;
+            }
+            if(this.user_pwd == ''){
+                this.user_pwd_p = '用户密码不能为空'
+                return false;
+            }
             this.$http.post('http://api.890vip.cn/api/site/login',{"user_name":this.user_name,"user_pwd":this.user_pwd},{emulateJSON:true}).then((res) => {
                 storage.setItem('token',res.body.token)
             }, (res) => {
