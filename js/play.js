@@ -5,6 +5,9 @@ var app = new Vue({
         message: '欢迎来到我的博客',
         icp: "陕ICP备16003703号",
         copyright: "Design by 890",
+        user_name:'请输入账号',
+        user_pwd:'请输入密码',
+        isLogin:false,
         menus:[],
         blogs: []
     },
@@ -12,15 +15,17 @@ var app = new Vue({
         checkLogin: function () {
             var storage = window.localStorage
             var token = storage.getItem('token');
-            console.log(token);
             if(!token){
-                this.$http.post('http://api.890vip.cn/api/site/login',{"user_name":"890","user_pwd":"123456"},{emulateJSON:true}).then((res) => {
-                    storage.setItem('token',res.body.token)
-                }, (res) => {
-                    console.log(res)
-                })
+                this.isLogin = !this.isLogin;
             }
-
+        },
+        login:function () {
+            var storage = window.localStorage
+            this.$http.post('http://api.890vip.cn/api/site/login',{"user_name":this.user_name,"user_pwd":this.user_pwd},{emulateJSON:true}).then((res) => {
+                storage.setItem('token',res.body.token)
+            }, (res) => {
+                console.log(res)
+            })
         }
     },
     mounted: function () {

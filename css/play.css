@@ -1,0 +1,60 @@
+body,html,#app,.my-model{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+.mask{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #888;
+    opacity:0.3;
+    filter: alpha(opacity=30);
+    z-index: 10;
+}
+.modal{
+    position: absolute;
+    width: 35%;
+    height: 350px;
+    top: 150px;
+    left: 30%;
+    background-color: #fff;
+    z-index: 12;
+    border-radius: 3px;
+}
+.logo{
+    height: 100px;
+    line-height: 100px;
+    margin: 15px auto;
+    text-align: center;
+}
+.logo img{
+    height: 100%;
+}
+.input-group{
+    display: block;
+    width: 75%;
+    margin: 15px auto;
+    height: 80px;
+    line-height: 80px;
+}
+.input-group label{
+    display: inline-block;
+    width: 20%;
+    height: 40px;
+    line-height: 40px;
+    float: left;
+    text-align: left;
+    vertical-align:bottom;
+}
+.input-group input{
+    display: inline-block;
+    width: 75%;
+    height: 40px;
+    line-height: 40px;
+    float: right;
+    font-size: 24px;
+    text-indent: 12px;
+}
