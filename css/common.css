@@ -240,6 +240,7 @@ a#wechat:hover + .wechat-qrcode {
 .logo img{
     width: 100px;
     height: 100px;
+    display: inline-block;
 }
 .input-group{
     display: block;
