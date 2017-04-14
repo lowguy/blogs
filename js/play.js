@@ -59,6 +59,7 @@ var app = new Vue({
             })
         },
         getLists:function () {
+            var _this = this
             var storage = window.localStorage
             var token = storage.getItem('token');
             this.$http.post('http://api.890vip.cn/api/play/lists',{"token":token},{emulateJSON:true}).then((res) => {
