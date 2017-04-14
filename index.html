@@ -18,7 +18,7 @@
             <div class="nav-item nav-item-y">
                 <ul>
                     <li v-for="menu in menus">
-                        <router-link to="menu.url" v-text="menu.title">首页</router-link>
+                        <a v-link="menu.url" v-text="menu.title">首页</a>
                         <span class="nav-out"></span>
                     </li>
                 </ul>
