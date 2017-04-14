@@ -26,8 +26,17 @@
     </header>
     <div class="post-list">
         <ul>
-            <li  v-for="img in images">
-                <span v-text="img.title"></span>
+            <li v-for="img in images">
+                <img :src="img.path">
+                <div class="info">
+                    <div class="user">
+                        <span v-text="img.username" class="user-name"></span>
+                        <span v-text="img.create_time" class="time"></span>
+                    </div>
+                    <div class="title">
+                        <span v-text="img.title"></span>
+                    </div>
+                </div>
             </li>
         </ul>
     </div>
