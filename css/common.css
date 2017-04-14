@@ -59,10 +59,13 @@ header {
 #nav .logo {
     width: 54px;
     height: 54px;
+    line-height: 54px;
     position: absolute;
     left: 0;
     top: 50%;
     margin-top: -27px;
+    font-size: 24px;
+    color: #FFFF00;
 }
 #nav .nav-item {
     height: 26px;
