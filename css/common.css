@@ -86,6 +86,9 @@ header {
     color: #fff;
     opacity: 0.8;
 }
+#nav .nav-item li a:hover{
+    color: #FFFF00;
+}
 #nav .nav-item li span {
     width: 0;
     height: 1px;
