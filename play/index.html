@@ -9,6 +9,28 @@
 </head>
 <body>
 <div id="app">
+    <header>
+        <div id="nav" class="col-1140">
+            <div class="logo">
+                8 9 0
+            </div>
+            <div class="nav-item nav-item-y">
+                <ul>
+                    <li v-for="menu in menus">
+                        <a :href="menu.url" v-text="menu.title">首页</a>
+                        <span class="nav-out"></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="post-list">
+        <ul>
+            <li  v-for="img in images">
+                <span v-text="img.title"></span>
+            </li>
+        </ul>
+    </div>
     <div v-show="isLogin" class="my-model">
         <div class="mask"></div>
         <div class="modal">
