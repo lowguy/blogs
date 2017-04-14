@@ -238,7 +238,8 @@ a#wechat:hover + .wechat-qrcode {
     text-align: center;
 }
 .logo img{
-    height: 100%;
+    width: 100px;
+    height: 100px;
 }
 .input-group{
     display: block;
@@ -254,6 +255,7 @@ a#wechat:hover + .wechat-qrcode {
     height: 40px;
     line-height: 40px;
     float: left;
+    font-size: 16px;
     text-align: left;
     vertical-align:bottom;
 }
@@ -263,7 +265,7 @@ a#wechat:hover + .wechat-qrcode {
     height: 40px;
     line-height: 40px;
     float: right;
-    font-size: 24px;
+    font-size: 16px;
     text-indent: 12px;
 }
 .input-group button{
