@@ -14,7 +14,7 @@ var app = new Vue({
             var storage = window.localStorage
             var token = storage.getItem('token')
             if(!token){
-                this.$http.post('http://api.890vip.cn/api/site/login',{"user_name":"890","user_pwd":"123456"}).then((res) => {
+                this.$http.post('http://api.890vip.cn/api/site/login',{"user_name":"890","user_pwd":"123456"},{emulateJSON:true}).then((res) => {
                     console.log(res)
                     storage.setItem('token',res.body.result.token)
                 }, (res) => {
