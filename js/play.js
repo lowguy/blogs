@@ -20,6 +20,9 @@ var app = new Vue({
             var token = storage.getItem('token');
             if(!token){
                 this.isLogin = !this.isLogin;
+            }else {
+                _this.getMenus();
+                _this.getLists();
             }
         },
         login:function () {
