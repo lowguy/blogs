@@ -21,8 +21,8 @@ var app = new Vue({
             if(!token){
                 this.isLogin = !this.isLogin;
             }else {
-                _this.getMenus();
-                _this.getLists();
+                this.getMenus();
+                this.getLists();
             }
         },
         login:function () {
