@@ -5,8 +5,10 @@ var app = new Vue({
         message: '欢迎来到我的博客',
         icp: "陕ICP备16003703号",
         copyright: "Design by 890",
-        user_name:'请输入账号',
-        user_pwd:'请输入密码',
+        user_name_p:'请输入账号',
+        user_name:'',
+        user_pwd_p:'请输入密码',
+        user_pwd:'',
         isLogin:false,
         menus:[],
         blogs: []
