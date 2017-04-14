@@ -11,14 +11,14 @@
     <header>
         <div id="nav" class="col-1140">
             <div class="logo">
-                <a v-link="/">
+                <a href="/">
                     <img src="/images/footer_logo.png" alt="">
                 </a>
             </div>
             <div class="nav-item nav-item-y">
                 <ul>
                     <li v-for="menu in menus">
-                        <router-link to="menu.url" v-text="menu.title"></router-link>
+                        <a v-href="menu.url" v-text="menu.title">首页</a>
                         <span class="nav-out"></span>
                     </li>
                 </ul>
