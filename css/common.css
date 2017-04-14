@@ -178,3 +178,26 @@ p {
 a#wechat:hover + .wechat-qrcode {
     display: block;
 }
+
+/**************滚动条组成***************/
+::-webkit-scrollbar
+{
+    width: 10px;
+    height: 10px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+    border-radius: 0px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 0 4px rgba(0,0,0,.2);
+    background-color: #888;
+}
+/***************滚动条组成**************/
