@@ -1,6 +1,7 @@
 var app = new Vue({
     el: '#app',
     data: {
+        domain:'http://api.890vip.cn/',
         author: '890',
         message: '欢迎来到我的博客',
         icp: "陕ICP备16003703号",
@@ -10,7 +11,7 @@ var app = new Vue({
     methods: {
         getBlogs: function () {
             var _this = this
-            this.$http.get('http://api.890vip.cn/api/blog/lists').then((res) => {
+            this.$http.get(_this.domain+'blog/lists').then((res) => {
                 _this.blogs = res.body.result
             }, (res) => {
                 console.log(res)

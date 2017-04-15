@@ -1,6 +1,7 @@
 var app = new Vue({
     el: '#app',
     data: {
+        domain:'http://api.890vip.cn/',
         author: '890',
         message: '欢迎来到我的博客',
         icp: "陕ICP备16003703号",
@@ -36,7 +37,7 @@ var app = new Vue({
                 _this.user_pwd_p = '用户密码不能为空'
                 return false;
             }
-            this.$http.post('http://api.890vip.cn/api/site/login',{"user_name":this.user_name,"user_pwd":this.user_pwd},{emulateJSON:true}).then((res) => {
+            this.$http.post(_this.domain+'site/login',{"user_name":this.user_name,"user_pwd":this.user_pwd},{emulateJSON:true}).then((res) => {
                 if(res.body.status == 1){
                     _this.isLogin = false
                     storage.setItem('token',res.body.token)
@@ -45,14 +46,13 @@ var app = new Vue({
                 }else{
                     _this.alertMsg = res.body.message
                 }
-
             }, (res) => {
                 console.log(res)
             })
         },
         getMenus: function () {
             var _this = this
-            this.$http.get('http://api.890vip.cn/api/menu/menulist').then((res) => {
+            this.$http.get(_this.domain+'menu/menulist').then((res) => {
                 _this.menus = res.body.result
             }, (res) => {
                 console.log(res)
@@ -62,9 +62,8 @@ var app = new Vue({
             var _this = this
             var storage = window.localStorage
             var token = storage.getItem('token');
-            this.$http.post('http://api.890vip.cn/api/play/lists',{"token":token},{emulateJSON:true}).then((res) => {
+            this.$http.post(_this.domain+'play/lists',{"token":token},{emulateJSON:true}).then((res) => {
                 _this.images = res.body.result
-
             }, (res) => {
                 console.log(res)
             })
