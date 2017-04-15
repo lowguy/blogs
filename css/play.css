@@ -1,3 +1,27 @@
 .post-list{
-	margin-top: 120px;
+	width:90%;
+	margin:120px auto;
+}
+.post-list li{
+	display:inline-block;
+	width:30%;
+	margin-right: 5%;
+}
+.post-list li:nth-child(3n){
+	margin-right:0px;
+	float:right;
+}
+.post-list li .info{
+	height:120px;
+	width:98%;
+	margin:8px auto;
+}
+.post-list li .info .user-name,.post-list li .info .create-time{
+	display:inline-block;
+	width:50%;
+	height:40px;
+	line-height:40px;
+}
+.post-list li .info .create-time{
+	text-align:right;
 }
