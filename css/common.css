@@ -1,7 +1,12 @@
-html
+html,body
 {
-    color:#000;
-    background:#FFF;
+    color:#999;
+    background-color: #f5f5f5;
+    width: 100%;
+    height: 100%;
+}
+body, button, input, select, textarea {
+    font: 12px/1.5 "微软雅黑","黑体","宋体",Simsun,"Arial Unicode MS",Mingliu,Helvetica;
 }
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td
 {
@@ -37,82 +42,33 @@ body, input, button, textarea
     font-size:1.4rem;
     font-family:Arial, Helvetica, sans-serif;
 }
-body,html,#app,.my-model{
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-}
 a{ text-decoration:none;outline:none;}
 a:hover{ cursor:pointer;}
 th, td{vertical-align:top;}
-
+#app{
+    width: 90%;
+    margin: 0 auto;
+}
 .col-1140, .col-970, .col-912, .col-800, .col-684 {
     width: 1140px;
     margin: 0 auto;
     position: relative;
 }
-header {
+.clear{
+    clear: both;
+}
+.line{
+    float: left;
+    background: url(../images/line.jpg) repeat-x;
+    height: 3px;
+    line-height: 3px;
+    margin: 40px auto;
     width: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    position: fixed;
-    top: 0;
-    z-index: 9;
+    overflow: hidden;
 }
-#nav{
-    height: 100px;
-}
-#nav .logo {
-    width: 54px;
-    height: 54px;
-    line-height: 54px;
-    position: absolute;
-    left: 0;
-    top: 50%;
-    margin-top: -27px;
-    font-size: 24px;
-    color: #FFFF00;
-}
-#nav .nav-item {
-    height: 26px;
-    position: absolute;
-    right: 0;
-    top: 50%;
-    margin-top: -13px;
-}
-#nav .nav-item li {
-    width: auto;
-    height: 26px;
-    line-height: 26px;
-    position: relative;
-    display: inline-block;
-    margin-left: 44px;
-    font-size: 0;
-}
-#nav .nav-item li a {
-    display: block;
-    font-size: 16px;
-    color: #fff;
-    opacity: 0.8;
-}
-#nav .nav-item li a:hover{
-    color: #FFFF00;
-}
-#nav .nav-item li span {
-    width: 0;
-    height: 1px;
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background: #fff;
-}
-
-
 footer {
     width: 100%;
     height: 180px;
-    background: #191919;
 }
 .fbar {
     position: relative;
@@ -157,20 +113,7 @@ p {
     height: 22px;
     background: url(../images/social_icon.png);
 }
-.ficp {
-    border-top: 1px solid #2b2b2b;
-}
-.ficp .finfo {
-    height: 50px;
-    line-height: 50px;
-    padding: 0;
-}
-.finfo {
-    padding: 12px 0 18px;
-    font-size: 12px;
-    color: #a3a3a3;
-    text-align: center;
-}
+
 .wechat-qrcode {
     position: absolute;
     width: 200px;

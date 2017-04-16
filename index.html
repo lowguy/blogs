@@ -8,21 +8,6 @@
 </head>
 <body>
 <div id="app">
-    <header>
-        <div id="nav" class="col-1140">
-            <div class="logo">
-                8 9 0
-            </div>
-            <div class="nav-item nav-item-y">
-                <ul>
-                    <li v-for="menu in menus">
-                        <a :href="menu.url" v-text="menu.title">首页</a>
-                        <span class="nav-out"></span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </header>
     <div class="content">
         <div class="banner" style="position: relative">
             <div style="position: absolute;text-align: center;font-size: 50px;margin-top: 200px;width: 100%;">
@@ -33,18 +18,22 @@
     </div>
     <div class="clear"></div>
     <div class="post-list">
-        <ul>
-            <li v-for="blog in blogs" v-on:click="getDetail(blog.id)">
-                <img :src="blog.thumb" alt="">
-                <div class="text-area">
-                    <div class="time" v-text="blog.create_time"></div>
-                    <h2 v-text="blog.title"></h2>
-                    <p v-text="blog.brief"></p>
+        <div class="content">
+            <div class="item" v-for="blog in blogs">
+                <div class="blogs">
+                    <img :src="blog.thumb" alt="">
+                    <div class="text-area">
+                        <div class="time" v-text="blog.create_time"></div>
+                        <h2 v-text="blog.title"></h2>
+                        <p v-text="blog.brief"></p>
+                    </div>
+                
                 </div>
-            </li>
-        </ul>
+            </div>
+        </div>
     </div>
     <div class="clear"></div>
+    <span class="line"></span>
     <footer>
         <div class="col-1140">
             <div class="fbar clearfix">
@@ -63,10 +52,8 @@
                 </div>
             </div>
         </div>
-        <div class="ficp">
-            <p class="finfo">Copyright © 2017 890vip Inc. 保留所有权利</p>
-        </div>
     </footer>
+    <span class="line"></span>
 </div>
 <script src="js/vue/vue.min.js"></script>
 <script src="js/vue/vue-resource.min.js"></script>
