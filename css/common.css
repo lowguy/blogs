@@ -62,17 +62,15 @@ th, td{vertical-align:top;}
     background: url(../images/line.jpg) repeat-x;
     height: 3px;
     line-height: 3px;
-    margin: 40px auto;
+    margin: 0.8rem auto;
     width: 100%;
     overflow: hidden;
 }
 footer {
     width: 100%;
-    height: 180px;
 }
 .fbar {
     position: relative;
-    padding: 15px 0 15px;
 }
 .fbar .fcnt {
     width: 270px;
@@ -80,8 +78,8 @@ footer {
     text-align: center;
 }
 .fbar .fcnt .fbar-logo {
-    width: 75px;
-    height: 72px;
+    width: 10rem;
+    height: 10rem;
     margin: 0 auto;
 }
 .finfo.text1 {
@@ -98,27 +96,30 @@ p {
 }
 .fbar .fcnt .fcnt-social {
     text-align: center;
+    display: block;
+    margin-top: 5rem;
 }
 .fbar .fcnt .fcnt-social a#weibo {
     margin-right: 22px;
-    background-position: 0 0;
+    background: url(http://img.890vip.cn/blog/footer/weibo.png);
+    background-size: 100%;
 }
 .fbar .fcnt .fcnt-social a#wechat {
-    background-position: -24px 0;
+    background: url(http://img.890vip.cn/blog/footer/wx.png);
+    background-size: 100%;
 }
 
 .fbar .fcnt .fcnt-social a {
     display: inline-block;
-    width: 24px;
-    height: 22px;
-    background: url(../images/social_icon.png);
+    width: 3rem;
+    height: 3rem;
 }
 
 .wechat-qrcode {
     position: absolute;
     width: 200px;
     height: 200px;
-    top: -200px;
+    top: 0px;
     left: 50%;
     margin-left: -100px;
     z-index: 9;
