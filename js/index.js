@@ -20,7 +20,7 @@ var app = new Vue({
         },
         getBlogs: function () {
             var _this = this
-            this.$http.get(_this.domain+'blog/lists').then((res) => {
+            this.$http.get(_this.domain+'blog/index').then((res) => {
                 _this.blogs = res.body.result
             }, (res) => {
                 console.log(res)
