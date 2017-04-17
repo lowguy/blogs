@@ -74,5 +74,16 @@
     background: url(http://img.890vip.cn/blog/common/bg1.png) no-repeat;
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: -4rem;
+}
+.bg2{
+    display: block;
+    height: 25rem;
+    width: 45rem;
+    background: url(http://img.890vip.cn/blog/common/bg2.png) no-repeat;
+    z-index: 999;
+    background-size: 45rem 25rem;
+    right: 0rem;
+    position: absolute;
+    bottom: 10rem;
 }
