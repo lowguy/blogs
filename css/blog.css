@@ -87,3 +87,17 @@
     position: absolute;
     bottom: 10rem;
 }
+#menu-blog{
+    background: url(http://img.890vip.cn/blog/common/common.png) no-repeat;
+    background-position: 0px 0px;
+    height: 63px;
+    display: inline-block;
+    width: 120px;
+}
+#menu-my{
+    background: url(http://img.890vip.cn/blog/common/common.png) no-repeat;
+    background-position: -120px 0px;
+    height: 63px;
+    display: inline-block;
+    width: 95px;
+}
