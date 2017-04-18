@@ -87,14 +87,21 @@
     position: absolute;
     bottom: 2rem;
 }
-.sun-f,sun-s{
+.sun-f,.sun-s{
     display: block;
     width: 4rem;
     height: 4rem;
     border: 0.2rem solid #dade4b;
     right: 15rem;
     position: absolute;
-    bottom: 2rem;
+    bottom: 15rem;
+}
+.sun-f{
+    transform:rotate(45deg);
+    -ms-transform:rotate(45deg); 	/* IE 9 */
+    -moz-transform:rotate(45deg); 	/* Firefox */
+    -webkit-transform:rotate(45deg); /* Safari 和 Chrome */
+    -o-transform:rotate(45deg);
 }
 #menu-blog{
     background: url(http://img.890vip.cn/blog/common/common.png) no-repeat;
