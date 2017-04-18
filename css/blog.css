@@ -78,14 +78,14 @@
 }
 .bg2{
     display: block;
-    height: 25rem;
-    width: 45rem;
+    height: 10rem;
+    width: 18rem;
     background: url(http://img.890vip.cn/blog/common/bg2.png) no-repeat;
     z-index: 999;
-    background-size: 45rem 25rem;
-    right: 0rem;
+    background-size: 100% 100%;
+    right: 15rem;
     position: absolute;
-    bottom: 10rem;
+    bottom: 2rem;
 }
 #menu-blog{
     background: url(http://img.890vip.cn/blog/common/common.png) no-repeat;
