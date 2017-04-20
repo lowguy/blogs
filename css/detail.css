@@ -1,7 +1,7 @@
 body {
     font: 14px/1 arial, 'pingfangsc', 'microsoft yahei', sans-serif;
     color: #000;
-    background: url(../images/bg.png);
+    background: #f5f5f5;
 }
 #wrap {
     padding-top: 68px;
