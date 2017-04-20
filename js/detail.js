@@ -11,7 +11,6 @@ var app = new Vue({
       var _this = this
       this.$http.get(_this.domain+'blog/detail/id/'+id).then((res) => {
           _this.detail = res.body.result
-          hljs.initHighlightingOnLoad();
       },(res) => {
           console.log(res)
       })
