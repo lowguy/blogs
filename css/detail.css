@@ -147,7 +147,7 @@ body {
     margin-bottom: 15px;
 }
 .book-list {
-    padding: 70px 0 0.5em;
+    padding: 0.5rem 0 0.5em;
     background: #FFF;
     width: 100%;
     font-size: 18px;
@@ -160,7 +160,7 @@ body {
     margin: 0 100px;
 }
 .book-title {
-    font-size: 1.7em;
+    font-size: 1.6em;
     font-weight: normal;
     color: #A34544;
 }
