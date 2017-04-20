@@ -14,11 +14,6 @@ var app = new Vue({
       },(res) => {
           console.log(res)
       })
-        $(document).ready(function() {
-            $('pre code').each(function(i, block) {
-                hljs.highlightBlock(block);
-            });
-        });
     }
   },
   mounted:function(){
