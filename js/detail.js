@@ -16,9 +16,15 @@ var app = new Vue({
       })
     }
   },
+  created:function(){
+      var storage=window.localStorage
+      id = storage.getItem('id')
+      this.getDetail(id);
+  },
   mounted:function(){
-    var storage=window.localStorage
-    id = storage.getItem('id')
-    this.getDetail(id)
+    
+    $('pre code').each(function(i, block) {
+        hljs.highlightBlock(block);
+    });
   }
 })

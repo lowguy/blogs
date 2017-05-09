@@ -49,11 +49,6 @@
         var storage=window.localStorage
         var id = storage.getItem('id')
         $('#qrcode').qrcode("http://blogs.890vip.cn/detail?id="+id);
-        $(document).ready(function() {
-            $('pre code').each(function(i, block) {
-                hljs.highlightBlock(block);
-            });
-        });
     })
 </script>
 </html>
