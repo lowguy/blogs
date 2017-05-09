@@ -1,6 +1,10 @@
 
+import hljs from  'lib/highlight.min.js';
+Vue.directive('highlight',function(el){
+  hljs.highlightBlock(el);
+});
 
-var app = new Vue({
+new Vue({
   el: '#app',
   data: {
       domain:'http://api.890vip.cn/',
@@ -28,7 +32,3 @@ var app = new Vue({
   }
 })
 
-var hljs = require('./lib/highlight.min.js');
-Vue.directive('highlight',function(el){
-  hljs.highlightBlock(el);
-});
