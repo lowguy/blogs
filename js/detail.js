@@ -1,5 +1,5 @@
 
-import hljs from  'lib/highlight.min.js';
+
 Vue.directive('highlight',function(el){
   hljs.highlightBlock(el);
 });
