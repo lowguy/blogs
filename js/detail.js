@@ -23,8 +23,7 @@ var app = new Vue({
   },
   mounted:function(){
     
-    $('pre code').each(function(i, block) {
-        hljs.highlightBlock(block);
-    });
+    hljs.initHighlightingOnLoad() 
+    $(function () { $('pre code').each(function (i, block) { hljs.highlightBlock(block) }) }) 
   }
 })
