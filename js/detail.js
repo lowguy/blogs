@@ -1,7 +1,9 @@
 
 
 Vue.directive('highlight',function(el){
-  hljs.highlightBlock(el);
+  console.log(el);
+  var nn = hljs.highlightBlock(el);
+  console.log(nn);
 });
 
 new Vue({
