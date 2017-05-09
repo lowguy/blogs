@@ -7,21 +7,7 @@ var app = new Vue({
       icp:"陕ICP备16003703号",
       detail:[]
   },
-  directives: {
-    highlight: function(el, binding) {
-      console.log(890);
-      console.log(binding.value);
-        if (binding.value) {
-            let value = null
-            if (typeof(binding.value) === "string") {
-                value = binding.value
-            } else {
-                value = JSON.stringify(binding.value, null, 4)
-            }
-            el.innerHTML = hljs.highlight("json", value, true).value
-        }
-    }
-  },
+ 
   methods:{
     getDetail:function(id){
       var _this = this
@@ -41,3 +27,8 @@ var app = new Vue({
 
   }
 })
+
+var hljs = require('./lib/highlight.min.js');
+Vue.directive('highlight',function(el){
+  hljs.highlightBlock(el);
+});
