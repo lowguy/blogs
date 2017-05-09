@@ -9,6 +9,7 @@ var app = new Vue({
   },
   directives: {
     highlight: function(el, binding) {
+      console.log(890);
       console.log(binding.value);
         if (binding.value) {
             let value = null
