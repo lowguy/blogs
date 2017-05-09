@@ -1,10 +1,24 @@
 
+
 var app = new Vue({
   el: '#app',
   data: {
       domain:'http://api.890vip.cn/',
       icp:"陕ICP备16003703号",
       detail:[]
+  },
+  directives: {
+    highlight: function(el, binding) {
+        if (binding.value) {
+            let value = null
+            if (typeof(binding.value) === "string") {
+                value = binding.value
+            } else {
+                value = JSON.stringify(binding.value, null, 4)
+            }
+            el.innerHTML = hljs.highlight("json", value, true).value
+        }
+    }
   },
   methods:{
     getDetail:function(id){
@@ -22,8 +36,6 @@ var app = new Vue({
       this.getDetail(id);
   },
   mounted:function(){
-    
-    hljs.initHighlightingOnLoad() 
-    $(function () { $('pre code').each(function (i, block) { hljs.highlightBlock(block) }) }) 
+
   }
 })
