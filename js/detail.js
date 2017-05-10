@@ -1,11 +1,4 @@
 
-
-Vue.directive('highlight',function(el){
-  console.log(el);
-  var nn = hljs.highlightBlock(el);
-  console.log(nn);
-});
-
 new Vue({
   el: '#app',
   data: {
